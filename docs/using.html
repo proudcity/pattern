@@ -1,0 +1,41 @@
+To use these patterns on your own website:
+
+<h4>I. Use our boilerplate</h4>
+Install <a href="https://nodejs.org" target="_blank">node</a>, <a href="http://gruntjs.com/" target="_blank">grunt</a>, and <a href="http://bower.io/" target="_blank">bower</a> globally.
+<code style="display:block;">
+git clone https://github.com/proudcity/proudcity-patternlibrary-boilerplate.git<br/>
+cd proudcity-patternlibrary-boilerplate<br/>
+npm install && bower install<br/>
+grunt<br/>
+</code>
+
+<h4>II. Manual installation with Bower</h4>
+
+<ol>
+<li>
+Install with (Bower)[http://bower.io]:
+<code style="display:block;">
+bower install proudcity-patterns
+</code>
+</li>
+
+<li>
+Add 
+<code style="display:block;">
+'<%= app %>/bower_components/proudcity-patterns/app/scss'
+</code>
+to <code>sass.options.includePaths</code> in <code>Gruntfile.js</code>.
+</li>
+
+<li>
+Copy <code>_local-settings.scss</code> into your local scss directory.
+</li>
+
+<li>
+Copy the <code>@include</code> statements in 
+<a href="https://github.com/proudcity/proudcity-patterns/blob/master/app/scss/_proudcity-patterns.scss" target="_blank">./app/scss/_proudcity-patterns.scss</a>
+into your own <code>app.scss</code> file.
+</li>
+
+</ol>
+

@@ -1,0 +1,62 @@
+<form class="form-horizontal" role="form" style="max-width: 600px;">
+  <div class="form-group">
+    <label for="em12" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control form-control-width-md" id="em12">
+      <span class="help-block">Your email will be used to log in.</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="n12" class="col-sm-3 control-label required">Name</label>
+    <div class="col-sm-9">
+      <input required aria-required="true" type="text" class="form-control form-control-width-md" id="n12">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ci12" class="col-sm-3 control-label required">City</label>
+    <div class="col-sm-9">
+      <input required aria-required="true" type="email" class="form-control form-control-width-md" id="ci12">
+    </div>
+</div>
+<div class="form-group">
+    <label for="si12" class="col-sm-3 control-label required">State</label>
+    <div class="col-sm-9">
+        <select required aria-required="true" id="si12" class="form-control form-control-width-md">
+          <option>AL</option>
+          <option>AK</option>
+          <option>AZ</option>
+          <option>AR</option>
+          <option>CA</option>
+        </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Shipping</label>
+    <div class="col-sm-9">
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Send me notifications via email
+          </label>
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default">Back</button>
+      <button type="submit" class="btn btn-primary pull-right ">Submit</button>
+    </div>
+  </div>
+</form>
