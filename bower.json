@@ -1,0 +1,6 @@
+{
+  "name": "ProudCity Pattern Library Boilerplate",
+  "dependencies": {
+    "proudcity-patterns": "~0.1.2"
+  }
+}
