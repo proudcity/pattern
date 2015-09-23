@@ -1,4 +1,4 @@
-@import "loaders/load";
+@import "loaders/variable-loader";
 
 
 /* -------------------------------------------------------------------------
@@ -239,7 +239,7 @@ ul.scroll-menu {
 .sg-section {
   margin-bottom: 32px; /* For older browsers */
   margin-bottom: 3rem;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
   .sg-anchor {
