@@ -46,36 +46,6 @@ $brand-danger:          #d9534f !default;
 $brand-danger-alt:      darken($brand-danger, 6.5%);
 
 
-$font-size-h1:            60px; 
-$font-size-h2:            48px; 
-$font-size-h3:            36px; 
-$font-size-h4:            24px; 
-$font-size-h5:            20px;
-$font-size-h6:            18px; 
-
-$font-color-h1:            $black; 
-$font-color-h2:            $black; 
-$font-color-h3:            $black; 
-$font-color-h4:            $black; 
-$font-color-h5:            $black;
-$font-color-h6:            $black; 
-
-$font-weight-h1:            600;
-$font-weight-h2:            600;
-$font-weight-h3:            600;
-$font-weight-h4:            600; 
-$font-weight-h5:            600;
-$font-weight-h6:            600;
-
-$font-line-height-h1:            1.1; 
-$font-line-height-h2:            1.2; 
-$font-line-height-h3:            1.4; 
-$font-line-height-h4:            1.5; 
-$font-line-height-h5:            1.4;
-$font-line-height-h6:            1.4;
-
-
-
 // Social
 $gray-social: #b6b6b8;
 $blue-facebook: #3460a1;
@@ -117,7 +87,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          18px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -127,6 +97,38 @@ $font-size-h3:            26px; // ~24px
 $font-size-h4:            20px; // ~18px
 $font-size-h5:            16px;
 $font-size-h6:            16px; // ~12px
+
+
+
+$font-size-h1:            60px; 
+$font-size-h2:            48px; 
+$font-size-h3:            36px; 
+$font-size-h4:            24px; 
+$font-size-h5:            20px;
+$font-size-h6:            18px; 
+
+$font-color-h1:            $black; 
+$font-color-h2:            $black; 
+$font-color-h3:            $black; 
+$font-color-h4:            $black; 
+$font-color-h5:            $black;
+$font-color-h6:            $black; 
+
+$font-weight-h1:            600;
+$font-weight-h2:            600;
+$font-weight-h3:            600;
+$font-weight-h4:            600; 
+$font-weight-h5:            600;
+$font-weight-h6:            600;
+
+$font-line-height-h1:            1.1; 
+$font-line-height-h2:            1.2; 
+$font-line-height-h3:            1.4; 
+$font-line-height-h4:            1.5; 
+$font-line-height-h5:            1.4;
+$font-line-height-h6:            1.4;
+
+
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.5 !default; // 20/14
