@@ -67,28 +67,10 @@ module.exports = function(grunt) {
 			livereload: {
 				files: ['*.html', '!node_modules/**', '!bower_components/**', 'js/**/*.js', 'css/**/*.css', 'images/**/*.{jpg,gif,svg,jpeg,png}'],
 				options: {
-					livereload: 35727
+					livereload: true
 				}
 			}
-    },
-
-    connect: {
-			app: {
-				options: {
-					port: 9000,
-					base: './',
-					open: true,
-					livereload: 35727,
-					hostname: 'localhost'//,
-					//middleware:  function (connect) {
-          //  return [
-          //    modRewrite ([filesRedirect]),
-          //    mountFolder(connect, './')
-          //  ];        
-	        //}
-				}
-			}
-		}
+    }
   });
 
   
@@ -97,5 +79,5 @@ module.exports = function(grunt) {
   });
 
   // Run watch at default settings
-  grunt.registerTask('default', ['warn', 'sass:dev', 'connect:app', 'watch']);
+  grunt.registerTask('default', ['warn', 'sass:dev', 'watch']);
 }
