@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,900,700,300");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -5757,6 +5758,42 @@ button.close {
   width: 1px !important;
   height: 1px !important;
   position: absolute !important; }
+
+h1 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.1; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.2; }
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.4; }
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.5; }
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.4; }
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.4; }
 
 .date-box {
   border: 4px solid #eeeeee;
