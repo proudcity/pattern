@@ -5308,6 +5308,10 @@ button.close {
     .card-columns .card, .card-columns-sm-3 .card {
       display: inline-block;
       width: 100%; }
+  .card-columns-sm-2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; }
   .card-columns-sm-4 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -5315,6 +5319,12 @@ button.close {
 
 @media screen and (min-width: 992px) {
   .card-columns-md-4 {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4; } }
+
+@media screen and (min-width: 1280px) {
+  .card-columns-lg-4 {
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4; } }
