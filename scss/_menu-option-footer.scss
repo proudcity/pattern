@@ -1,40 +1,32 @@
 $nav-height-short: 54px;
+$nav-height-mod: 2px;
 $nav-height-tall: 740px;
 
-.menu-option-footer, .menu-option-header {
+.menu-option-footer {
   max-width: 100%;
   overflow-x: hidden;
 
   body {
     padding-top: 0;
+    padding-bottom: $nav-height-short;
     position: relative;
     z-index: 0;
     left: 0;
     @include transition(left .2s ease-out);
-   
-    // &.active-311,
-    // &.search-active {
-    //    @include transition(left .5s ease-out);
-    // }
-
-    // &.search-active {
-    //   left: -100%;
-    // }
-
-    // &.active-311 {
-    //   left: 100%;
-    // }
   }
 
-  .navbar-fixed-top + .navbar {
-    margin-top: $nav-height-short;
+  .navbar-fixed-bottom {
+    bottom: -($nav-height-mod);
   }   
 
-  .navbar-fixed-top,
   .navbar-fixed-bottom {
-    height: $nav-height-short;
+    height: $nav-height-short + $nav-height-mod;
     @include transition(height 0.2s ease-in-out);
     overflow: hidden;
+
+    .navbar-nav {
+      height: $nav-height-short;
+    }
   
     @include respond($xs-only) {
       .navbar-nav {
@@ -43,17 +35,71 @@ $nav-height-tall: 740px;
     }
   }
 
-  .bottom-nav-open {
-    .navbar-fixed-top,
+  .menu-nav-open {
     .navbar-fixed-bottom {
-      height: 100%;
+      height: 105%;
     }
 
-    .navbar-btn.middle {
+    .navbar-btn.menu-button i {
       @include transform(rotate(180deg));
     }
   }
 
+  // Logo area
+  #logo-menu {
+    display: none;
+  }
+
+  $button-d: 45px;
+  $button-width: 47px;
+  $button-height: $button-d;
+
+  .navbar-btn {
+    border-radius: 10px;
+    padding: 0;
+    font-size: 18px;
+    margin-top: ($nav-height-short - $button-height) / 2;
+    margin-bottom: 0;
+    background-color: lighten($navbar-default-bg, 10%);
+    @include transition(margin-top 0.2s ease-in-out, background-color 0.1s ease-in);
+    
+    &, i {
+      width: $button-width;
+      height: $button-height;
+      vertical-align: middle;
+      line-height: $button-height * 0.95;
+    }
+
+    i {
+      @include transition(transform 0.2s linear);
+      vertical-align: middle;
+    }  
+
+    &:hover {
+      background-color: lighten($navbar-default-bg, 25%);
+      color: $link-color;
+    }
+
+    &.menu-button {
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .navbar-header {
+    // text-align: center;
+
+    img {
+      display: inline-block;
+      max-width: 300px;
+      height: auto;
+    }
+  }
 
   @include respond($xs-only) {
 
@@ -62,7 +108,8 @@ $nav-height-tall: 740px;
       text-align: center;
       position: absolute;
       bottom: 0;
-      height: $nav-height-short;
+      padding-bottom: $nav-height-mod;
+      height: $nav-height-short + $nav-height-mod;
       width: 100%;
       z-index: 10;
     }
@@ -77,46 +124,47 @@ $nav-height-tall: 740px;
     .menu-box {
       float: right!important;
       min-width: 125px;
+
+      .btn-toolbar.pull-right {
+        margin-left: 0;
+      }
     }
 
-    .middle {
+    .navbar-header {
+      float: none;
+    }
+
+    .menu-button {
       display: none;
     }
   }
-  
 
-  .navbar-btn {
-    border-radius: 100%;
-    width: 45px;
-    height: 45px;
-    line-height: 41px;
-    padding: 0;
-    font-size: 18px;
-    background-color: lighten($navbar-default-bg, 10%);
-    @include transition(margin-top 0.2s ease-in-out, background-color 0.1s ease-in, transform 0.2s ease);
-  
-
-    &:hover {
-      background-color: lighten($navbar-default-bg, 25%);
-      color: $link-color;
+  @include respond($md-up) {
+    body {
+      padding-top: $nav-height-short;
+      padding-bottom: 0;
     }
 
-    &.middle {
-      &:hover {
-        // margin-top: 0px;
-      }
+    // Logo area
+    #logo-menu {
+      display: block;
     }
-  }
 
-  .navbar-header {
-    // text-align: center;
+    // Switch to top header
+    .navbar-fixed-bottom {
+      bottom: auto;
+      top: -2px;
+    }
 
-    img {
-      display: inline-block;
-      max-width: 300px;
-      height: auto;
+    // Hide header area in favor of icon in toolbar
+    .navbar-fixed-bottom + .navbar {
+      display: none;    
     }
   }
+
+  //*******************************************
+  // PAGE SPECIFIC BELOW
+  //*******************************************
   
 
   // Search mode activated
