@@ -5808,6 +5808,10 @@ button.close {
   height: 1px !important;
   position: absolute !important; }
 
+.form-group {
+  padding: 1em 0;
+  border-bottom: 1px solid #FAFAFA; }
+
 .date-box {
   border: 4px solid #eeeeee;
   color: #777777;
