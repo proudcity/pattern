@@ -3698,16 +3698,16 @@ a.badge:hover, a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #c6d9e7; }
+  color: #222222;
+  background-color: #d8e5ee; }
   .jumbotron h1, .jumbotron .h1 {
-    color: inherit; }
+    color: #000000; }
   .jumbotron p {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #a3c0d7; }
+    border-top-color: #b5cddf; }
   .container .jumbotron, .container-fluid .jumbotron {
     border-radius: 2px; }
   .jumbotron .container {
@@ -5999,11 +5999,13 @@ footer.page-footer {
 .jumbotron {
   background-size: cover;
   background-position: center 30%; }
+  .jumbotron h1 {
+    font-size: 52px; }
   .jumbotron.jumbotron-inverse {
     background-color: #004993;
-    color: #FFF; }
+    color: #FAFAFA; }
     .jumbotron.jumbotron-inverse h1 {
-      color: inherit; }
+      color: #FFF; }
 
 .jumbotron-bg {
   z-index: 1;

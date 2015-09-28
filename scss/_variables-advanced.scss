@@ -436,15 +436,15 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //##
 
 $jumbotron-padding:              30px !default;
-$jumbotron-color:                inherit !default;
-$jumbotron-bg:                   lighten(desaturate($brand-primary, 50%), 30%);
-$jumbotron-heading-color:        inherit !default;
-$jumbotron-font-size:            ceil(($font-size-base * 1.1)) !default;
+$jumbotron-color:                $gray-darker !default;
+$jumbotron-bg:                   lighten(desaturate($brand-primary, 50%), 35%) !default;
+$jumbotron-heading-color:        $black !default;
+$jumbotron-font-size:            ceil(($font-size-base * 1.25)) !default;
 
-$jumbotron-inverse-color:                $white !default;
-$jumbotron-inverse-bg:                   darken(saturate($brand-primary, 50%), 30%);
-$jumbotron-inverse-heading-color:        inherit !default;
-
+$jumbotron-inverse-color:                $gray-lightest !default;
+$jumbotron-inverse-bg:                   darken(saturate($brand-primary, 50%), 30%) !default;
+$jumbotron-inverse-heading-color:        $white !default;
+$jumbotron-inverse-btn-primary-color:    lighten(desaturate($brand-primary, 50%), 35%) !default;
 
 //== Form states and alerts
 //
