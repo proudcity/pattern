@@ -122,6 +122,8 @@ else {
 <script src="js/dropdown.js"></script>
 <script src="js/offcanvas.js"></script>
 <script src="js/affix.js"></script>
+<script src="js/collapse.js"></script>
+<script src="js/tab.js"></script>
 <script src="js/sg-plugins.js"></script>
 <script src="js/sg-scripts.js"></script>
 
