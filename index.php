@@ -124,9 +124,9 @@ else {
 <script src="js/affix.js"></script>
 <script src="js/collapse.js"></script>
 <script src="js/tab.js"></script>
+<script src="//select2.github.io/select2/select2-3.5.2/select2.js"></script>
 <script src="js/sg-plugins.js"></script>
 <script src="js/sg-scripts.js"></script>
-
 
 </body>
 </html>

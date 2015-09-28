@@ -83,5 +83,8 @@
     prettyPrint();
   
   }
+
+  // Enable select2
+  $( ".select2, .select2-multiple" ).select2();
  
  })(document);

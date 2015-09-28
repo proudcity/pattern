@@ -3699,7 +3699,7 @@ a.badge:hover, a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #2198f3; }
+  background-color: #c6d9e7; }
   .jumbotron h1, .jumbotron .h1 {
     color: inherit; }
   .jumbotron p {
@@ -3707,7 +3707,7 @@ a.badge:hover, a.badge:focus {
     font-size: 18px;
     font-weight: 200; }
   .jumbotron > hr {
-    border-top-color: #0c7ed5; }
+    border-top-color: #a3c0d7; }
   .container .jumbotron, .container-fluid .jumbotron {
     border-radius: 2px; }
   .jumbotron .container {
@@ -5995,15 +5995,20 @@ footer.page-footer {
 .jumbotron {
   background-size: cover;
   background-position: center 30%; }
+  .jumbotron.jumbotron-inverse {
+    background-color: #004993;
+    color: #FFF; }
+    .jumbotron.jumbotron-inverse h1 {
+      color: inherit; }
 
-.hero-bg {
+.jumbotron-bg {
   z-index: 1;
   padding: 15px;
   position: relative; }
-  .hero-bg > * {
+  .jumbotron-bg > * {
     position: relative;
     z-index: 1; }
-  .hero-bg:before {
+  .jumbotron-bg:before {
     display: block;
     content: "";
     position: absolute;
@@ -6014,13 +6019,13 @@ footer.page-footer {
     opacity: 0.9;
     border-radius: 2px;
     background-color: #eeeeee; }
-  .hero-bg.blue-back:before {
+  .jumbotron-bg.blue-back:before {
     background-color: #2196F3; }
-  .hero-bg.blue-back > * {
+  .jumbotron-bg.blue-back > * {
     color: white; }
 
 @media screen and (min-width: 768px) {
-  .hero-bg {
+  .jumbotron-bg {
     padding: 50px; } }
 
 .menu-option-footer {

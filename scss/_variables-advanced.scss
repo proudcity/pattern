@@ -437,9 +437,13 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   desaturate($brand-primary, 0);
+$jumbotron-bg:                   lighten(desaturate($brand-primary, 50%), 30%);
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.1)) !default;
+
+$jumbotron-inverse-color:                $white !default;
+$jumbotron-inverse-bg:                   darken(saturate($brand-primary, 50%), 30%);
+$jumbotron-inverse-heading-color:        inherit !default;
 
 
 //== Form states and alerts

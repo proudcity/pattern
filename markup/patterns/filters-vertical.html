@@ -1,129 +1,108 @@
 <div class="row"><div style="min-width: 275px;" class="col-md-3">
+
 <div class="card">
-    <form class="filters card-block">
-        <h3 class="filter-heading">
-            Refine by <a href="" class="filters-clear">Clear</a>
-        </h3>
-        <div class="filter-list">
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup8" class="filter-group-title">
-                Year <i class="icon icon-angle-right pull-right"></i>
-            </div>
-            <div id="filterGroup8" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <ul class="list-unstyled">
-                            <li><a href="">2014</a></li>
-                            <li><a href="">2013</a></li>
-                            <li><a href="">2012</a></li>
-                            <li><a href="">2011</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup2" class="filter-group-title">
-                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Conveyance type 
-            </div>
-            <div id="filterGroup2" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <label><input checked="" type="checkbox">Assignment <span class="text-muted">(13)</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Service <span class="text-muted">(43)</span></label>
-                        </div>
-                        <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
-                <i class="icon icon-angle-right pull-right"></i> Date range 
-            </div>
-            <div id="filterGroup1" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup5" class="filter-group-title">
-                <i class="icon icon-angle-right pull-right"></i> Distance 
-            </div>
-            
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup10" class="filter-group-title">
-                <i class="icon icon-angle-right pull-right"></i> Amount 
-            </div>
-            <div id="filterGroup10" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group clearfix padding-left-1 padding-right-1">
-                        <div style="text-align: center; margin-bottom: -5px;">
-                          <span class="bold" id="sl7-lower">10.00</span>
-                        </div>
-                        <div id="sl7" data-nouislider="" data-link-lower="#sl7-lower" data-min="0" data-max="10" data-step="1" data-start="10" class="noUi-target noUi-ltr noUi-horizontal noUi-connect"><div class="noUi-base"><div class="noUi-origin noUi-background noUi-stacking" style="left: 100%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
-                <i class="icon icon-angle-right pull-right"></i> Name 
-            </div>
-            <div id="filterGroup6" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <label for="serange" class="sr-only control-label">Range</label>
-                        <span class="input-icon icon icon-search"></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup3" class="filter-group-title">
-                Colors <i class="icon icon-angle-right pull-right"></i>
-            </div>
-            <div id="filterGroup3" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <div style="background-color: red;" class="filter-color"></div>
-                        <div style="background-color: green;" class="filter-color"></div>
-                        <div style="background-color: orange;" class="filter-color active"></div>
-                        <div style="background-color: purple;" class="filter-color"></div>
-                        <div style="background-color: black;" class="filter-color"></div>
-                        <div style="background-color: white;" class="filter-color"></div>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup7" class="filter-group-title">
-                Tags <i class="icon icon-angle-right pull-right"></i>
-            </div>
-            <div id="filterGroup7" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <ul class="list-unstyled">
-                            <li class="filter-value">Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
-                            <li class="filter-value">Change of name <i class="pull-right icon icon-close icon-muted"></i></li>
-                        </ul>
-                        <div class="input-group">
-                          <input class="form-control" type="email" placeholder="Enter tag">
-                          <div class="input-group-btn">
-                            <button class="btn btn-default">Add</button>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <form class="filters card-block">
+    <h3 class="filter-heading">
+      Refine by <small><a href="" class="filters-clear pull-right">Clear</a></small>
+    </h3>
+
+    <div class="form-item">
+      <div class="form-group">
+        <div class="checkbox">
+          <label><input checked="" type="checkbox">Assignment <span class="text-muted">(13)</span></label>
         </div>
-    </form>
+        <div class="checkbox">
+          <label><input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Service <span class="text-muted">(43)</span></label>
+        </div>
+        <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+      </div>
+    </div>
+
+    <div class="form-item">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+        </span>
+      </div><!-- /input-group -->
+    </div>
+
+    <div id="filterGroup1" class="collapse in">
+      <div class="filter-group-content">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+          </div>
+          <div class="form-group col-sm-6">
+            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--
+    <div class="form-group">
+      <label for="single" class="control-label">Single select</label>
+      <select id="single" class="form-control select2">
+        <option></option>
+        <optgroup label="Alaskan/Hawaiian Time Zone">
+          <option value="AK">Alaska</option>
+          <option value="HI">Hawaii</option>
+        </optgroup>
+        <optgroup label="Pacific Time Zone">
+          <option value="CA">California</option>
+          <option value="NV">Nevada</option>
+          <option value="OR">Oregon</option>
+          <option value="WA">Washington</option>
+        </optgroup>
+        <optgroup label="Mountain Time Zone">
+          <option value="AZ">Arizona</option>
+          <option value="CO">Colorado</option>
+        </optgroup>
+        <optgroup label="Central Time Zone">
+          <option value="AL">Alabama</option>
+          <option value="AR">Arkansas</option>
+          <option value="IL">Illinois</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="multiple" class="control-label">Single select</label>
+      <select id="multiple" class="form-control select2" multiple>
+        <option></option>
+        <optgroup label="Alaskan/Hawaiian Time Zone">
+          <option value="AK">Alaska</option>
+          <option value="HI">Hawaii</option>
+        </optgroup>
+        <optgroup label="Pacific Time Zone">
+          <option value="CA">California</option>
+          <option value="NV">Nevada</option>
+          <option value="OR">Oregon</option>
+          <option value="WA">Washington</option>
+        </optgroup>
+        <optgroup label="Mountain Time Zone">
+          <option value="AZ">Arizona</option>
+          <option value="CO">Colorado</option>
+        </optgroup>
+        <optgroup label="Central Time Zone">
+          <option value="AL">Alabama</option>
+          <option value="AR">Arkansas</option>
+          <option value="IL">Illinois</option>
+        </optgroup>
+      </select>
+    </div>
+-->
+  </form>
 </div><!-- .card -->
+
 </div></div>
