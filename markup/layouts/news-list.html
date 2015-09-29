@@ -1,39 +1,4 @@
-<nav class="navbar navbar-inverse" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
 
-
-    <ul id="logo-menu" class="nav navbar-nav">
-      <li>
-        <a href="/" title="Home" rel="home" id="logo">
-          <!--<img class="logo" src="http://slc.helmcivic.com/sites/slc.helmcivic.com/files/logo-opac.png" alt="Home">-->
-          <i class="fa fa-circle-o-notch fa-2x fa-inverse"></i>
-        </a>
-      </li>
-      <li><a class="navbar-brand" href="/"><strong class="ng-binding">Corvallis</strong></a></li>
-      <!--<li><a class="btn btn-primary btn-get-started" ng-click="modal();">Get started</a></li>-->
-    </ul>
-
-  </div> <!-- /.navbar-header -->
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="navbar-collapse">
-    <ul id="main-menu" class="menu nav navbar-nav pull-right">
-    <li class="first leaf menu-link-agencies"><a href="" ng-click="modal()">Agencies</a></li>
-    <li class="leaf menu-link-answers"><a href="" ng-click="modal()">Answers</a></li>
-    <li class="leaf menu-link-events"><a href="" ng-click="modal()">Events</a></li>
-    <li class="leaf menu-link-news"><a href="" ng-click="modal()">News</a></li>
-    <li class="leaf menu-link-documents"><a href="" ng-click="modal()">Documents</a></li>
-    <li class="last leaf menu-link-connect"><a href="" ng-click="modal()">Connect</a></li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
 
 <div class="breadcrumb-wrapper">
   <div class="container">
@@ -52,64 +17,58 @@
 <div class="row">
 
 <div class="col-md-3">
-    <a class="btn btn-primary btn-sm visible-xs"><i class="fa fa-search"> Refine results</i></a>
-    <div class="card hidden-xs">
-        <form class="filters card-block">
-            <h3 class="filter-heading">
-                Refine by <a href="" class="filters-clear pull-right">Clear</a>
-            </h3>
-            <div class="filter-list">
+  
+  <div class="card">
+    <form class="filters filters-vertical card-block">
+      <h3>
+        Refine by
+      </h3>
 
-                <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
-                    <i class="icon icon-angle-right pull-right"></i> Keyword 
-                </div>
-                <div id="filterGroup6" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <label for="serange" class="sr-only control-label">Range</label>
-                            <span class="input-icon icon icon-search"></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                    </div>
-                </div>               
-                <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
-                    <i class="icon icon-angle-right pull-right"></i> Date published 
-                </div>
-                <div id="filterGroup1" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" id="dp1442552519132">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" id="dp1442552519133">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup7" class="filter-group-title">
-                Tags <i class="icon icon-angle-right pull-right"></i>
-            </div>
-            <div id="filterGroup7" class="collapse in">
-                <div class="filter-group-content">
-                    <div class="form-group">
-                        <ul class="list-unstyled">
-                            <li class="filter-value">Press release <i class="pull-right icon icon-close icon-muted"></i></li>
-                        </ul>
-                        <div class="input-group">
-                          <input class="form-control" type="email" placeholder="Enter tag">
-                          <div class="input-group-btn">
-                            <button class="btn btn-default">Add</button>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Keywords">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
 
-            <input type="submit" value="Filter" class="btn btn-primary" />
-        </form>
-    </div><!-- .card -->
+      <div class="form-group">
+        <label>Date published</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+          </div>
+          <div class="col-sm-6">
+            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="multiple" class="control-label">Tags</label>
+        <select id="filter-multiple" class="form-control select2" multiple>
+          <option value="AK">Alaska</option>
+          <option value="HI">Hawaii</option>
+          <option value="CA">California</option>
+          <option value="NV">Nevada</option>
+          <option value="OR">Oregon</option>
+          <option value="WA">Washington</option>
+          <option value="AZ">Arizona</option>
+          <option value="CO">Colorado</option>
+          <option value="AL">Alabama</option>
+          <option value="AR">Arkansas</option>
+          <option value="IL">Illinois</option>
+        </select>
+      </div>
+
+      <div class="form-group form-group-submit">
+        <input type="submit" class="btn btn-primary" value="Apply" />
+        <a href="#" class="filters-clear pull-right">Clear</a>
+      </div>
+    </form>
+  </div><!-- .card -->
+
 </div>
 
 

@@ -29,6 +29,7 @@ else {
 <title><?php echo($project_name)?></title>
 <meta name="viewport" content="width=device-width">
 <!-- Style Guide Boilerplate Styles -->
+<link rel="stylesheet" href="//select2.github.io/select2/select2-3.5.1/select2.css">
 <?php print $css; ?>
 
 </head>
