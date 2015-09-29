@@ -5155,9 +5155,15 @@ button.close {
 .card {
   position: relative;
   margin-bottom: 0.75rem;
-  background-color: #fff;
+  background-color: #FFF;
   border: 0.1rem solid #e5e5e5;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  -webkit-transition: box-shadow 0.1s linear;
+  -moz-transition: box-shadow 0.1s linear;
+  transition: box-shadow 0.1s linear;
+  box-shadow: 0 0 10px #FFF inset; }
+  .card:focus, .card:hover {
+    box-shadow: 0 0 8px 4px #f7f7f7 inset; }
 
 .card-block {
   padding: 1.25rem; }
@@ -5198,27 +5204,45 @@ button.close {
 
 .card-primary {
   background-color: #2196F3;
-  border-color: #2196F3; }
+  border-color: #2196F3;
+  box-shadow: 0 0 10px #2196F3 inset; }
+  .card-primary:focus, .card-primary:hover {
+    box-shadow: 0 0 10px #0c7ed5 inset; }
 
 .card-success {
   background-color: #26BF7D;
-  border-color: #26BF7D; }
+  border-color: #26BF7D;
+  box-shadow: 0 0 10px #26BF7D inset; }
+  .card-success:focus, .card-success:hover {
+    box-shadow: 0 0 10px #1e9461 inset; }
 
 .card-info {
   background-color: #5bc0de;
-  border-color: #5bc0de; }
+  border-color: #5bc0de;
+  box-shadow: 0 0 10px #5bc0de inset; }
+  .card-info:focus, .card-info:hover {
+    box-shadow: 0 0 10px #31b2d5 inset; }
 
 .card-warning {
   background-color: #f0ad4e;
-  border-color: #f0ad4e; }
+  border-color: #f0ad4e;
+  box-shadow: 0 0 10px #f0ad4e inset; }
+  .card-warning:focus, .card-warning:hover {
+    box-shadow: 0 0 10px #ec971f inset; }
 
 .card-danger {
   background-color: #d9534f;
-  border-color: #d9534f; }
+  border-color: #d9534f;
+  box-shadow: 0 0 10px #d9534f inset; }
+  .card-danger:focus, .card-danger:hover {
+    box-shadow: 0 0 10px #c92e2c inset; }
 
 .card-dark {
   background-color: #333333;
-  border-color: #333333; }
+  border-color: #333333;
+  box-shadow: 0 0 10px #333333 inset; }
+  .card-dark:focus, .card-dark:hover {
+    box-shadow: 0 0 10px #1a1a1a inset; }
 
 .card-inverse .card-header, .card-inverse .card-footer {
   border-bottom: 0.075rem solid rgba(255, 255, 255, 0.2); }
@@ -5228,6 +5252,17 @@ button.close {
   color: rgba(255, 255, 255, 0.65); }
 .card-inverse .card-link:focus, .card-inverse .card-link:hover {
   color: #fff; }
+
+.card-btn {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem; }
+  .card-btn:hover {
+    text-decoration: none; }
+  .card-btn > * {
+    margin-top: 1.25rem;
+    margin-bottom: 0; }
+  .card-btn > *:first-child {
+    margin-top: 0; }
 
 .card-blockquote {
   padding: 0;
