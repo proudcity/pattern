@@ -5903,6 +5903,9 @@ ul.title-list li {
   .filters-vertical .form-group.form-group-submit {
     border-bottom: none; }
 
+label {
+  font-weight: normal; }
+
 .date-box {
   border: 4px solid #eeeeee;
   color: #777777;
