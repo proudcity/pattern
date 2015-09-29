@@ -6143,6 +6143,9 @@ footer.page-footer {
     opacity: 0.9;
     border-radius: 2px;
     background-color: #eeeeee; }
+  .jumbotron-inverse .jumbotron-bg:before {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6); }
   .jumbotron-bg.blue-back:before {
     background-color: #2196F3; }
   .jumbotron-bg.blue-back > * {
