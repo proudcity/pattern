@@ -6078,7 +6078,9 @@ footer.page-footer {
 
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   .full-container {
-    padding-top: 50%; } }
+    padding-top: 50%; }
+    .container .full-container {
+      padding-top: 70%; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   .full-container {
@@ -6086,7 +6088,9 @@ footer.page-footer {
 
 @media screen and (min-width: 992px) and (orientation: landscape) {
   .full-container {
-    padding-top: 40%; } }
+    padding-top: 40%; }
+    .container .full-container {
+      padding-top: 70%; } }
 
 @media screen and (min-width: 992px) and (orientation: portrait) {
   .full-container {
