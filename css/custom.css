@@ -5362,7 +5362,7 @@ button.close {
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   cursor: default;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'FontAwesome';
   -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
@@ -5380,10 +5380,10 @@ button.close {
   text-align: right; }
 
 .ui-datepicker .ui-datepicker-prev:before {
-  content: "\e079"; }
+  content: "\f0d9"; }
 
 .ui-datepicker .ui-datepicker-next:before {
-  content: "\e080"; }
+  content: "\f0da"; }
 
 .ui-datepicker .ui-icon {
   display: none; }
@@ -5851,11 +5851,6 @@ h6 {
 .sidebar {
   margin-top: 24px; }
 
-ul.list-style-none {
-  padding: 0; }
-  ul.list-style-none > li {
-    list-style: none; }
-
 ul.title-list li {
   padding: 5px 0;
   border-top: 1px solid #eeeeee; }
@@ -5866,9 +5861,12 @@ ul.title-list li {
   padding: 5px 0;
   border-bottom: 1px solid #eeeeee; }
 
-.form-group {
-  padding: 1em 0;
-  border-bottom: 1px solid #FAFAFA; }
+.filters-vertical .form-group {
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 0; }
+  .filters-vertical .form-group.form-group-submit {
+    border-bottom: none; }
 
 .date-box {
   border: 4px solid #eeeeee;
@@ -5890,9 +5888,10 @@ ul.title-list li {
     padding: 0;
     padding-bottom: 0.3em; }
 
-.datepicker:before {
-  content: "\f133";
-  font-family: FontAwesome; }
+.datepicker::-webkit-input-placeholder::before {
+  content: "\f073";
+  font-family: FontAwesome;
+  padding-right: 10px; }
 
 .action-box .nav-contain li a {
   background: #626262; }
