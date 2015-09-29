@@ -6119,33 +6119,33 @@ footer.page-footer {
     color: #FAFAFA; }
     .jumbotron.jumbotron-inverse h1 {
       color: #FFF; }
+  .jumbotron.jumbotron-image {
+    background-color: transparent; }
+  .jumbotron .jumbotron-bg {
+    z-index: 1;
+    padding: 15px;
+    position: relative; }
+    .jumbotron .jumbotron-bg > * {
+      position: relative;
+      z-index: 1; }
+    .jumbotron .jumbotron-bg:before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      border-radius: 2px;
+      background-color: #eeeeee; }
+  .jumbotron.jumbotron-inverse .jumbotron-bg:before {
+    background-color: #000000;
+    opacity: 0.6; }
 
 .full-container .jumbotron {
   padding-left: 30px;
   padding-right: 30px; }
-
-.jumbotron-bg {
-  z-index: 1;
-  padding: 15px;
-  position: relative; }
-  .jumbotron-bg > * {
-    position: relative;
-    z-index: 1; }
-  .jumbotron-bg:before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    border-radius: 2px;
-    background-color: #eeeeee; }
-  .jumbotron-bg.blue-back:before {
-    background-color: #2196F3; }
-  .jumbotron-bg.blue-back > * {
-    color: white; }
 
 @media screen and (min-width: 768px) {
   .jumbotron-bg {
