@@ -6071,8 +6071,7 @@ footer.page-footer {
       top: 0;
       left: 0;
       width: 100%;
-      overflow: auto;
-      background-size: cover; }
+      overflow: auto; }
       .full-container > .full > * {
         display: table-cell;
         vertical-align: middle; } }
@@ -6085,17 +6084,13 @@ footer.page-footer {
   .full-container {
     padding-top: 90%; } }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
   .full-container {
-    padding-top: 65%; } }
+    padding-top: 40%; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 992px) and (orientation: portrait) {
   .full-container {
-    padding-top: 45%; } }
-
-@media screen and (min-width: 1500px) {
-  .full-container {
-    padding-top: 45%; } }
+    padding-top: 80%; } }
 
 .accordion .panel-heading {
   padding: 10px 15px; }
@@ -6110,6 +6105,51 @@ footer.page-footer {
     color: grey; }
   .accordion .panel-heading a.collapsed:after {
     content: "\f0da"; }
+
+.jumbotron {
+  background-size: cover;
+  background-position: center 30%; }
+  .jumbotron h1, .jumbotron h2 {
+    font-size: 52px; }
+  .jumbotron.jumbotron-inverse {
+    background-color: #004993;
+    color: #FAFAFA; }
+    .jumbotron.jumbotron-inverse h1 {
+      color: #FFF; }
+
+.full-container .jumbotron {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.jumbotron-bg {
+  z-index: 1;
+  padding: 15px;
+  position: relative; }
+  .jumbotron-bg > * {
+    position: relative;
+    z-index: 1; }
+  .jumbotron-bg:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    border-radius: 2px;
+    background-color: #eeeeee; }
+  .jumbotron-bg.blue-back:before {
+    background-color: #2196F3; }
+  .jumbotron-bg.blue-back > * {
+    color: white; }
+
+@media screen and (min-width: 768px) {
+  .jumbotron-bg {
+    padding: 50px; }
+  .full-container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px; } }
 
 .page-header {
   margin: 0; }
