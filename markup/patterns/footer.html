@@ -1,13 +1,49 @@
-<footer>
+<div class="container">
+  <nav class="footer-actions">
+
+    <div class="navbar-right dropdown font-size">
+      <button class="btn btn-default btn-xs" data-toggle="dropdown" id="font-size"><i class="fa fa-font"></i> Size <span class="caret"></span></button>
+      <ul class="dropdown-menu nav nav-pills" aria-labelledby="font-size">
+        <li><a href=""><i class="fa fa-font"></i><sup>+</sup></a></li>
+        <li class="active"><a href="">normal</a></li>
+        <li><a href="">a<sup>-</sup></a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-right dropdown translate">
+      <button class="btn btn-default btn-xs" id="translate-footer" data-toggle="dropdown"><i class="fa fa-globe"></i> Translate <span class="caret"></span></button>
+      <ul class="dropdown-menu" aria-labelledby="translate-footer">
+        <li>
+          <div id="google_translate_element"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="share share-inline">
+      <h6>Share</h6>
+      <ul>
+        <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+        <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a href=""><i class="fa fa-envelope"></i> Email</a></li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+<footer class="page-footer">
+  
+  <div class="container footer-top">
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-3">
-        <i class="fa fa-circle-o-notch fa-5x fa-inverse"></i>
-        <h2 class="margin-top-none"><small>Proudly serving</small> <div class="ng-binding">Your City</div></h2>
+        <h3><i class="fa fa-circle-o-notch fa-5x footer-logo"></i></h3>
+        <h2 class="margin-top-none"><small><em>Proudly serving</em></small> <div class="ng-binding">Your City</div></h2>
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Sections</h3>
-        <ul id="footer-menu" class="menu">
+        <ul id="footer-menu" class="list-style-none">
           <li><a href="#">Agencies</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">News</a></li>
@@ -17,7 +53,7 @@
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Actions</h3>
-        <ul>
+        <ul class="list-style-none">
           <li><a href="#"><!--<i class="fa fa-question-circle"></i>--> Get Answers</a></li>
           <li><a href="#"><!--<i class="fa fa-usd"></i>--> Make a Payment</a></li>
           <li><a href="#"><!--<i class="fa fa-exclamation-triangle"></i>--> Report an Issue</a></li>
@@ -26,16 +62,14 @@
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Contact</h3>
-        <ul>
+        <ul class="list-style-none">
           <li><a href="tel:+1231231234">(123) 123-1234</a></li>
           <li><a href="mailto:example@getproudcity.com">example@getproudcity.com</a></li>
         </ul>
-        <a href="#"><i class="fa fa-twitter"></i></a> 
-        <a href="#"><i class="fa fa-facebook"></i></a> 
-        <a href="#"><i class="fa fa-linkedin"></i></a> 
-        <a href="#"><i class="fa fa-github"></i></a> 
+        
       </div>
       
     </div>
   </div>
+
 </footer>

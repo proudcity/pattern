@@ -5147,6 +5147,10 @@ button.close {
   max-width: none; }
   .card.card-full {
     max-width: 100%; }
+  .card.card-primary small a, .card.card-primary h4 a {
+    color: #fff; }
+    .card.card-primary small a:hover, .card.card-primary h4 a:hover {
+      text-decoration: underline; }
 
 .card {
   position: relative;
