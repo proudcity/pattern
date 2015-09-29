@@ -1,14 +1,5 @@
-<nav class="navbar navbar-default" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
-
+<div class="menu-option-footer">
+  <div class="navbar navbar-default" role="navigation">
     <ul id="logo-menu" class="nav navbar-nav">
       <li>
         <a href="#" title="Home" rel="home" id="logo">
@@ -19,42 +10,32 @@
       <li><a class="navbar-brand" href="/"><strong class="ng-binding">Corvallis</strong></a></li>
       <!--<li><a class="btn btn-primary btn-get-started" ng-click="modal();">Get started</a></li>-->
     </ul>
-
-    <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <div class="input-group">
-          <input type="text" class="form-control input-sm" placeholder="Need help?">
-          <span class="input-group-btn">
-            <button class="btn btn-default btn-sm" type="button"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
+    <div class="container-fluid menu-box">
+      <div class="btn-toolbar pull-left" role="toolbar">
+        <a class="btn navbar-btn 311-button"><i class="fa fa-question"></i></a>
+        <a class="btn navbar-btn payments-button"><i class="fa fa-money"></i></a>
+        <a class="btn navbar-btn issue-button"><i class="fa fa-exclamation-triangle"></i></a>
       </div>
-    </form>
-
-  </div> <!-- /.navbar-header -->
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="navbar-collapse">
-    <ul id="main-menu" class="menu nav navbar-nav pull-right">
-    <li class="first leaf menu-link-agencies"><a href="" ng-click="modal()">Agencies</a></li>
-    <li class="leaf menu-link-answers"><a href="" ng-click="modal()">Answers</a></li>
-    <li class="leaf menu-link-events"><a href="" ng-click="modal()">Events</a></li>
-    <li class="leaf menu-link-news"><a href="" ng-click="modal()">News</a></li>
-    <li class="leaf menu-link-documents"><a href="" ng-click="modal()">Documents</a></li>
-    <li class="last leaf menu-link-connect"><a href="" ng-click="modal()">Connect</a></li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+      <div class="btn-toolbar pull-right" role="toolbar">
+        <a class="btn navbar-btn menu-button"><i class="fa fa-chevron-up"></i></a>
+        <a class="btn navbar-btn search-btn"><i class="fa fa-search"></i> <span class="text sr-only">Search</span></a>
+      </div>
+    </div>
+    <div class="below">
+      <ul id="main-menu" class="menu nav navbar-nav pull-right"><li class="first leaf menu-link-agencies"><a href="" ng-click="modal()" class="">Agencies</a></li><li class="leaf menu-link-answers"><a href="" ng-click="modal()">Answers</a></li><li class="leaf menu-link-events"><a href="" ng-click="modal()">Events</a></li><li class="leaf menu-link-news"><a href="" ng-click="modal()">News</a></li><li class="leaf menu-link-documents"><a href="" ng-click="modal()">Documents</a></li><li class="last leaf menu-link-connect"><a href="" ng-click="modal()">Connect</a></li></ul>
+    </div>
+  </div>
+</div>
 
 <div class="breadcrumb-wrapper">
   <div class="container">
-    <ul class="breadcrumb"><li><a href="#">Home</a></li><li><strong>Privacy Policy</strong></li></ul>
+    <ul class="breadcrumb"><li><a href="#">Home</a></li><li><a href="#">Press Releases</a></li><li><strong>Green Days initiative announced</strong></li></ul>
   </div>
 </div>
 
 <div class="jumbotron">
   <div class="container">
-    <h1>Privacy Policy</h1>
+    <h1>Press Releases</h1>
   </div>
 </div>
 
@@ -62,7 +43,7 @@
 <div class="row">
 
 <div class="col-md-8">
-  <h1>Search for patents</h1>
+  <h1>Green Days initiative announced</h1>
   <h3>Two-day event to include discussions among USPTO leadership and experts from industry, academia, and the public</h3>
   <h6 class="text-muted">Jul 14, 2015</h6>
   <hr>
@@ -87,12 +68,32 @@
 
 </div>
 
-<div class="col-md-2">
+</div><!-- row -->
+</div><!-- container -->
 
-  <div data-spy="affix" data-offset-top="400" data-offset-bottom="400">
+<div class="container">
+  <nav class="footer-actions">
 
-    <div class="share share-stacked">
-      <h6>Share this</h6>
+    <div class="navbar-right dropdown font-size">
+      <button class="btn btn-default btn-xs" data-toggle="dropdown" id="font-size"><i class="fa fa-font"></i> Size <span class="caret"></span></button>
+      <ul class="dropdown-menu nav nav-pills" aria-labelledby="font-size">
+        <li><a href=""><i class="fa fa-font"></i><sup>+</sup></a></li>
+        <li class="active"><a href="">normal</a></li>
+        <li><a href="">a<sup>-</sup></a></li>
+      </ul>
+    </div>
+
+    <div class="navbar-right dropdown translate">
+      <button class="btn btn-default btn-xs" id="translate-footer" data-toggle="dropdown"><i class="fa fa-globe"></i> Translate <span class="caret"></span></button>
+      <ul class="dropdown-menu" aria-labelledby="translate-footer">
+        <li>
+          <div id="google_translate_element"></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="share share-inline">
+      <h6>Share</h6>
       <ul>
         <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
         <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
@@ -100,77 +101,22 @@
       </ul>
     </div>
 
-    <div class="dropdown translate translate-stacked">
-      <a class="btn btn-default btn-sm" id="translate-sidebar" data-toggle="dropdown"><i class="fa fa-globe"></i> Translate <span class="caret"></span></a>
-      <ul class="dropdown-menu" aria-labelledby="translate-sidebar">
-        <li>
-          <div id="google_translate_element_sidebar"></div>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
+  </nav>
 </div>
-
-</div><!-- row -->
-</div><!-- container -->
-
 
 <footer class="page-footer">
   
   <div class="container footer-top">
-    
-
-    
-
-
   </div>
-
-  <nav class="navbar navbar-inverse">
-    <div class="container">
-
-      <div class="navbar-right">
-        <div class="social social-inline">
-          <h6>Connect</h6>
-          <a href="#" class="btn btn-xs btn-default"><i class="fa fa-twitter"></i></a>
-          <a href="#" class="btn btn-xs btn-default"><i class="fa fa-facebook"></i></a>
-          <a href="#" class="btn btn-xs btn-default"><i class="fa fa-linkedin"></i></a>
-          <a href="#" class="btn btn-xs btn-default"><i class="fa fa-github"></i></a>
-        </div>
-      </div>
-
-
-      <div class="navbar-left dropdown google-translate">
-        <button class="btn btn-default btn-xs" id="translate-footer" data-toggle="dropdown"><i class="fa fa-globe"></i> Translate <span class="caret"></span></button>
-        <ul class="dropdown-menu" aria-labelledby="translate-footer">
-          <li>
-            <div id="google_translate_element_footer"></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="navbar-left dropdown share">
-        <a class="btn btn-default btn-xs" id="share-dropdown" data-toggle="dropdown"><i class="fa fa-share-alt"></i> Share <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="share-dropdown">
-          <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
-          <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
-          <li><a href=""><i class="fa fa-envelope"></i> Email</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-3">
         <h3><i class="fa fa-circle-o-notch fa-5x footer-logo"></i></h3>
-        <h2 class="margin-top-none"><small><em>Proudly serving<em></small> <div class="ng-binding">Your City</div></h2>
+        <h2 class="margin-top-none"><small><em>Proudly serving</em></small> <div class="ng-binding">Your City</div></h2>
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Sections</h3>
-        <ul id="footer-menu" class="menu">
+        <ul id="footer-menu" class="list-style-none">
           <li><a href="#">Agencies</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">News</a></li>
@@ -180,7 +126,7 @@
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Actions</h3>
-        <ul>
+        <ul class="list-style-none">
           <li><a href="#"><!--<i class="fa fa-question-circle"></i>--> Get Answers</a></li>
           <li><a href="#"><!--<i class="fa fa-usd"></i>--> Make a Payment</a></li>
           <li><a href="#"><!--<i class="fa fa-exclamation-triangle"></i>--> Report an Issue</a></li>
@@ -189,7 +135,7 @@
       </div>
       <div class="col-sm-6 col-md-3">
         <h3>Contact</h3>
-        <ul>
+        <ul class="list-style-none">
           <li><a href="tel:+1231231234">(123) 123-1234</a></li>
           <li><a href="mailto:example@getproudcity.com">example@getproudcity.com</a></li>
         </ul>
@@ -204,8 +150,7 @@
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element_sidebar');
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element_footer');
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
   }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

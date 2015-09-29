@@ -446,6 +446,11 @@ $jumbotron-inverse-bg:                   darken(saturate($brand-primary, 50%), 3
 $jumbotron-inverse-heading-color:        $white !default;
 $jumbotron-inverse-btn-primary-color:    lighten(desaturate($brand-primary, 50%), 35%) !default;
 
+
+//== Page headers
+$page-header-color: $brand-primary;
+
+
 //== Form states and alerts
 //
 //## Define colors for form feedback states and, by default, alerts.
