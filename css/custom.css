@@ -6058,40 +6058,44 @@ footer.page-footer {
   footer.page-footer .footer-logo {
     margin: 6px; }
 
-@media screen and (max-width: 991px) {
-  .full > div:first-child {
-    padding-top: 1em;
-    padding-bottom: 1em; } }
-
 @media screen and (min-width: 768px) {
-  .full-container .spacing-sm {
-    padding-top: 1em;
-    padding-bottom: 1em; }
-    .full-container .spacing-sm.full {
-      margin-top: 0;
-      margin-bottom: 0; } }
+  .full-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    width: 100%; }
+    .full-container > .full {
+      height: 100% !important;
+      display: table;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: auto;
+      background-size: cover; }
+      .full-container > .full > * {
+        display: table-cell;
+        vertical-align: middle; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  .full-container {
+    padding-top: 50%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+  .full-container {
+    padding-top: 90%; } }
 
 @media screen and (min-width: 992px) {
   .full-container {
-    height: 80%; }
-    .full-container .spacing-md {
-      padding-top: 1em;
-      padding-bottom: 1em; }
-      .full-container .spacing-md.full {
-        margin-top: 0;
-        margin-bottom: 0; }
-    .full-container > .full {
-      min-height: 100% !important;
-      padding-top: 0 !important;
-      display: table;
-      width: 100%; }
-      .full-container > .full > * {
-        display: table-cell;
-        vertical-align: middle; }
-      .full-container > .full .row-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: block; } }
+    padding-top: 65%; } }
+
+@media screen and (min-width: 1280px) {
+  .full-container {
+    padding-top: 45%; } }
+
+@media screen and (min-width: 1500px) {
+  .full-container {
+    padding-top: 45%; } }
 
 .accordion .panel-heading {
   padding: 10px 15px; }
@@ -6106,44 +6110,6 @@ footer.page-footer {
     color: grey; }
   .accordion .panel-heading a.collapsed:after {
     content: "\f0da"; }
-
-.jumbotron {
-  background-size: cover;
-  background-position: center 30%; }
-  .jumbotron h1, .jumbotron h2 {
-    font-size: 52px; }
-  .jumbotron.jumbotron-inverse {
-    background-color: #004993;
-    color: #FAFAFA; }
-    .jumbotron.jumbotron-inverse h1 {
-      color: #FFF; }
-
-.jumbotron-bg {
-  z-index: 1;
-  padding: 15px;
-  position: relative; }
-  .jumbotron-bg > * {
-    position: relative;
-    z-index: 1; }
-  .jumbotron-bg:before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    border-radius: 2px;
-    background-color: #eeeeee; }
-  .jumbotron-bg.blue-back:before {
-    background-color: #2196F3; }
-  .jumbotron-bg.blue-back > * {
-    color: white; }
-
-@media screen and (min-width: 768px) {
-  .jumbotron-bg {
-    padding: 50px; } }
 
 .page-header {
   margin: 0; }
