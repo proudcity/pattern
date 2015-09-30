@@ -1,6 +1,7 @@
 $nav-height-short: 54px;
 $nav-height-mod: 2px;
 $nav-height-tall: 740px;
+$nav-user-overlay-z: 1050; 
 
 .menu-option-footer {
   max-width: 100%;
@@ -15,36 +16,6 @@ $nav-height-tall: 740px;
     @include transition(left .2s ease-out);
   }
 
-  .navbar-fixed-bottom {
-    bottom: -($nav-height-mod);
-  }   
-
-  .navbar-fixed-bottom {
-    height: $nav-height-short + $nav-height-mod;
-    @include transition(height 0.2s ease-in-out);
-    overflow: hidden;
-
-    .navbar-nav {
-      height: $nav-height-short;
-    }
-  
-    @include respond($xs-only) {
-      .navbar-nav {
-        padding: $nav-height-short 20px;
-      }
-    }
-  }
-
-  .menu-nav-open {
-    .navbar-fixed-bottom {
-      height: 105%;
-    }
-
-    .navbar-btn.menu-button i {
-      @include transform(rotate(180deg));
-    }
-  }
-
   // Logo area
   #logo-menu {
     display: none;
@@ -55,16 +26,16 @@ $nav-height-tall: 740px;
   $button-height: $button-d;
 
   .navbar-btn {
+    padding-top: 0;
+    padding-bottom: 0;
     border-radius: 10px;
-    padding: 0;
-    font-size: 18px;
+    color: $navbar-default-link-color;
     margin-top: ($nav-height-short - $button-height) / 2;
     margin-bottom: 0;
     background-color: lighten($navbar-default-bg, 10%);
     @include transition(margin-top 0.2s ease-in-out, background-color 0.1s ease-in);
     
     &, i {
-      width: $button-width;
       height: $button-height;
       vertical-align: middle;
       line-height: $button-height * 0.95;
@@ -77,16 +48,25 @@ $nav-height-tall: 740px;
 
     &:hover {
       background-color: lighten($navbar-default-bg, 25%);
-      color: $link-color;
+      color: $navbar-default-link-hover-color;
     }
 
     &.menu-button {
       position: relative;
 
-      i {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .hamburger {
+        @include hamburger-icon-animate($navbar-default-link-color, false);
+      }
+    }
+  }
+
+  // open 
+  .menu-nav-open {
+    .navbar-btn.menu-button {
+      position: relative;
+
+      .hamburger {
+        @include hamburger-icon-active();
       }
     }
   }
@@ -103,24 +83,69 @@ $nav-height-tall: 740px;
 
   @include respond($xs-only) {
 
+    .navbar-fixed-bottom {
+      position: static;
+      min-height: 0;
+    }
+
+    #main-menu, 
+    .menu-box {
+      height: $nav-height-short + $nav-height-mod;
+      position: fixed;
+      bottom: -($nav-height-mod);
+      width: 100%;
+    }
+
+    #main-menu {
+      @include transition(height 0.2s ease, margin-bottom 0.2s ease);
+      overflow: hidden;
+      z-index: $nav-user-overlay-z - 1;
+      background: $navbar-default-bg;
+      margin-bottom: -$nav-height-short;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .menu-nav-open {
+      #main-menu {
+        height: 105%;
+        margin-bottom: 0;
+      }
+    }
+
     .menu-box {
       background: $navbar-default-bg;
       text-align: center;
-      position: absolute;
-      bottom: 0;
       padding-bottom: $nav-height-mod;
-      height: $nav-height-short + $nav-height-mod;
-      width: 100%;
-      z-index: 10;
+      z-index: $nav-user-overlay-z + 1;
     }
 
-    .navbar-fixed-top .menu-box {
-      bottom: auto;
-      top: 0;
+    .navbar-fixed-bottom {
+      .navbar-nav {
+        padding: $nav-height-short 20px;
+      }
+    }
+  }
+
+  @include respond($sm-and-down) {
+    
+    .navbar-btn {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 18px;
+      
+      &, i {
+        overflow: hidden;
+        width: $button-width;
+      }
     }
   }
 
   @include respond($sm-up) {
+    .navbar-fixed-bottom {
+      z-index: $nav-user-overlay-z + 1;
+    }
+
     .menu-box {
       float: right!important;
       min-width: 125px;
@@ -139,7 +164,7 @@ $nav-height-tall: 740px;
     }
   }
 
-  @include respond($md-up) {
+  @include respond($lg-up) {
     body {
       padding-top: $nav-height-short;
       padding-bottom: 0;
@@ -153,12 +178,31 @@ $nav-height-tall: 740px;
     // Switch to top header
     .navbar-fixed-bottom {
       bottom: auto;
-      top: -2px;
+      top: 0px;
+    }
+
+    #main-menu {
+      float: right;
+      margin-right: 10px;
     }
 
     // Hide header area in favor of icon in toolbar
     .navbar-fixed-bottom + .navbar {
       display: none;    
+    }
+
+    .navbar-btn {
+      margin-top: 4px;
+
+      i {
+        margin-right: 0.25em;
+      }
+
+      &.search-btn {
+        i {
+          margin-right: 0;
+        }
+      }
     }
   }
 
@@ -301,7 +345,7 @@ $nav-height-tall: 740px;
 
     .search-active {
       #search-bg {
-        z-index: 1050;
+        z-index: $nav-user-overlay-z;
         opacity: 1;
         left: 0;
       }
@@ -309,7 +353,7 @@ $nav-height-tall: 740px;
 
     .active-311 {
       #search-311 {
-        z-index: 1050;
+        z-index: $nav-user-overlay-z;
         opacity: 1;
         left: 0;
       }
@@ -330,6 +374,14 @@ $nav-height-tall: 740px;
           width: 60px;
         }
       }
+    }
+  }
+
+  @include respond($lg-up) {
+
+    #search-bg,
+    #search-311 {
+      padding-top: 100px;
     }
   }
 
