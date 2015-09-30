@@ -1112,22 +1112,22 @@ h4, .h4, h5, .h5, h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 52px; }
+  font-size: 60px; }
 
 h2, .h2 {
-  font-size: 36px; }
+  font-size: 48px; }
 
 h3, .h3 {
-  font-size: 26px; }
+  font-size: 36px; }
 
 h4, .h4 {
-  font-size: 20px; }
+  font-size: 24px; }
 
 h5, .h5 {
-  font-size: 16px; }
+  font-size: 20px; }
 
 h6, .h6 {
-  font-size: 16px; }
+  font-size: 18px; }
 
 p {
   margin: 0 0 12px; }
@@ -5848,37 +5848,37 @@ button.close {
   position: absolute !important; }
 
 h1 {
-  font-size: 52px;
+  font-size: 60px;
   font-weight: 600;
   color: #000000;
   line-height: 1.1; }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 600;
   color: #000000;
   line-height: 1.2; }
 
 h3 {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 600;
   color: #000000;
   line-height: 1.4; }
 
 h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: #000000;
   line-height: 1.5; }
 
 h5 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #000000;
   line-height: 1.4; }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
   line-height: 1.4; }
@@ -6121,7 +6121,7 @@ footer.page-footer, footer.page-footer a, footer.page-footer h2, footer.page-foo
   background-size: cover;
   background-position: center 30%; }
   .jumbotron h1, .jumbotron h2 {
-    font-size: 52px; }
+    font-size: 60px; }
   .jumbotron.jumbotron-inverse {
     background-color: #004993;
     color: #FAFAFA; }
