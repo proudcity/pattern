@@ -6049,16 +6049,21 @@ img {
 
 .footer-actions {
   background: transparent;
-  border-top: 1px solid #eeeeee;
+  background-color: #eeeeee;
   padding: 6px 0;
-  margin-top: 6px; }
+  margin-top: 48px; }
+  .footer-actions .nav > li > a {
+    color: #333333; }
+    .footer-actions .nav > li > a:hover, .footer-actions .nav > li > a:active, .footer-actions .nav > li > a:focus {
+      background: transparent;
+      color: #2196F3; }
   .footer-actions .navbar-left.dropdown, .footer-actions .navbar-left > .social, .footer-actions .navbar-right.dropdown, .footer-actions .navbar-right > .social {
     padding: 6px 12px 6px 0; }
 
-footer.page-footer {
-  background-color: #eeeeee; }
-  footer.page-footer .footer-logo {
-    margin: 6px; }
+footer.page-footer .footer-logo {
+  margin: 6px; }
+footer.page-footer, footer.page-footer a, footer.page-footer h2, footer.page-footer h3 {
+  color: #555555; }
 
 @media screen and (min-width: 768px) {
   .full-container {
