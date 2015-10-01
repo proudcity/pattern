@@ -32,7 +32,7 @@ $nav-user-overlay-z: 1050;
     color: $navbar-default-link-color;
     margin-top: ($nav-height-short - $button-height) / 2;
     margin-bottom: 0;
-    background-color: lighten($navbar-default-bg, 10%);
+    // background-color: lighten($navbar-default-bg, 10%);
     @include transition(margin-top 0.2s ease-in-out, background-color 0.1s ease-in);
     
     &, i {

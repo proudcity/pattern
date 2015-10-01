@@ -6209,7 +6209,6 @@ footer.page-footer {
     color: #9d9d9d;
     margin-top: 4.5px;
     margin-bottom: 0;
-    background-color: #1a1a1a;
     -webkit-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
     -moz-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
     transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in; }
