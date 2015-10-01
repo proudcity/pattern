@@ -3701,7 +3701,7 @@ a.badge:hover, a.badge:focus {
   color: #222222;
   background-color: #d8e5ee; }
   .jumbotron h1, .jumbotron .h1 {
-    color: #000000; }
+    color: #FFF; }
   .jumbotron p {
     margin-bottom: 15px;
     font-size: 20px;
@@ -6191,15 +6191,16 @@ footer.page-footer {
 .menu-option-footer {
   max-width: 100%;
   overflow-x: hidden; }
+  .menu-option-footer.navbar-force-static .navbar-fixed-bottom {
+    position: static !important; }
+  .menu-option-footer.topnav .navbar-fixed-top {
+    display: none; }
   .menu-option-footer body {
     padding-top: 0;
     padding-bottom: 54px;
     position: relative;
     z-index: 0;
-    left: 0;
-    -webkit-transition: left 0.2s ease-out;
-    -moz-transition: left 0.2s ease-out;
-    transition: left 0.2s ease-out; }
+    left: 0; }
   .menu-option-footer #logo-menu {
     display: none; }
   .menu-option-footer .navbar-btn {
@@ -6209,7 +6210,6 @@ footer.page-footer {
     color: #9d9d9d;
     margin-top: 4.5px;
     margin-bottom: 0;
-    background-color: #1a1a1a;
     -webkit-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
     -moz-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
     transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in; }
@@ -6472,5 +6472,7 @@ footer.page-footer {
       width: 60px; } }
   @media screen and (min-width: 1280px) {
     .menu-option-footer #search-bg, .menu-option-footer #search-311 {
-      padding-top: 100px; } }
+      padding-top: 100px; }
+      .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
+        top: 50px; } }
 

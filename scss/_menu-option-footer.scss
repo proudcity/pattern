@@ -7,13 +7,25 @@ $nav-user-overlay-z: 1050;
   max-width: 100%;
   overflow-x: hidden;
 
+  // Force for listing
+  &.navbar-force-static {
+    .navbar-fixed-bottom {
+      position: static!important;
+    }
+  }
+
+  &.topnav {
+    .navbar-fixed-top {
+      display: none;
+    }
+  }
+
   body {
     padding-top: 0;
     padding-bottom: $nav-height-short;
     position: relative;
     z-index: 0;
     left: 0;
-    @include transition(left .2s ease-out);
   }
 
   // Logo area
@@ -32,7 +44,7 @@ $nav-user-overlay-z: 1050;
     color: $navbar-default-link-color;
     margin-top: ($nav-height-short - $button-height) / 2;
     margin-bottom: 0;
-    background-color: lighten($navbar-default-bg, 10%);
+    // background-color: lighten($navbar-default-bg, 10%);
     @include transition(margin-top 0.2s ease-in-out, background-color 0.1s ease-in);
     
     &, i {
@@ -382,6 +394,10 @@ $nav-user-overlay-z: 1050;
     #search-bg,
     #search-311 {
       padding-top: 100px;
+
+      .search-close {
+        top: 50px;
+      }
     }
   }
 
