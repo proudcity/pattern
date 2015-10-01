@@ -382,6 +382,10 @@ $nav-user-overlay-z: 1050;
     #search-bg,
     #search-311 {
       padding-top: 100px;
+
+      .search-close {
+        top: 50px;
+      }
     }
   }
 

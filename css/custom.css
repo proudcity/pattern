@@ -6471,5 +6471,7 @@ footer.page-footer {
       width: 60px; } }
   @media screen and (min-width: 1280px) {
     .menu-option-footer #search-bg, .menu-option-footer #search-311 {
-      padding-top: 100px; } }
+      padding-top: 100px; }
+      .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
+        top: 50px; } }
 
