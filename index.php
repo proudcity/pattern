@@ -111,7 +111,7 @@ else {
         showMarkupItem('patterns', 'navbar');
       }
       
-      showMarkupPage('layouts', $pageReq); 
+      showMarkupPage('layouts', $pageReq);
     ?>
 
   <?php endif; ?>

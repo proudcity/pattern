@@ -1,92 +1,80 @@
 @todo: cleanup
 
-<div class="action-box">
-  <div class="nav-contain">
-    <ul class="nav nav-pills nav-stacked ">
-      <li class="ng-scope active">
-        <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/answers"><i class="fa fa-question-circle"></i> <span class="hidden-xs ng-binding">Get Answers</span></a>
-      </li>
-      <li class="ng-scope">
-        <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/payments"><i class="fa fa-usd"></i> <span class="hidden-xs ng-binding">Make a Payment</span></a>
-      </li>
-      <li class="ng-scope">
-        <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/report"><i class="fa fa-exclamation-triangle"></i> <span class="hidden-xs ng-binding">Report an Issue</span></a>
-      </li>
-      <li class="ng-scope">
-        <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/status"><i class="fa fa-wrench"></i> <span class="hidden-xs ng-binding">Check Status</span></a>
-      </li>
-    </ul>
-  </div>
+<div class="app-wrap">
+  <div class="action-box">
+    <div class="row">
+      <div class="nav-contain">
+        <ul class="nav nav-pills nav-stacked ">
+          <li class="ng-scope active">
+            <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/answers"><i class="fa fa-question-circle"></i> <span class="hidden-xs ng-binding">Get Answers</span></a>
+          </li>
+          <li class="ng-scope">
+            <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/payments"><i class="fa fa-credit-card"></i> <span class="hidden-xs ng-binding">Make a Payment</span></a>
+          </li>
+          <li class="ng-scope">
+            <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/report"><i class="fa fa-exclamation-triangle"></i> <span class="hidden-xs ng-binding">Report an Issue</span></a>
+          </li>
+          <li class="ng-scope">
+            <a class="ng-isolate-scope" href="/get/Oregon/Corvallis/status"><i class="fa fa-wrench"></i> <span class="hidden-xs ng-binding">Check Status</span></a>
+          </li>
+        </ul>
+      </div>
 
-  <div class="row">
-    <ul>
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-folder-open" href="#" style="color: #BC2D07"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #BC2D07">Jobs and Contracts</a></h4>
-          </div>
+      <div class="col-sm-12 content-contain">
+        <div class="body-content animation-wrap">
+          <main id="main-311" class="main main-311 transform clearfix">
+            <div class="slide-left-2 column">
+              <ol class="breadcrumb clean">
+                <li class="active"><i class="fa fa-th"></i> Select answer type</li>
+              </ol>
+              <dl class="angular-311-2col">
+                <dd class="col-sm-6 col-md-4 active">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-folder-open"></i><span class="ng-binding">Jobs and Contracts</span>
+                  </a></h4>
+                  <div class="animation-wrap">
+                    <div class="slidedown">
+                      <ul class="taxonomy-vocabulary-2col">
+                        <li class="ng-scope">
+                          <a href="/get/Alabama/Huntsville/answers/52/list">Contracts</a>
+                        </li>
+                        <li class="ng-scope">
+                          <a href="/get/Alabama/Huntsville/answers/52/list">Employment</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </dd>
+                <dd class="col-sm-6 col-md-4">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-user-md"></i><span class="ng-binding">Health</span>
+                  </a></h4>
+                </dd>
+                <dd class="col-sm-6 col-md-4">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-home"></i><span class="ng-binding">Property & Housing</span>
+                  </a></h4>
+                </dd>
+                <dd class="col-sm-6 col-md-4">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-newspaper-o"></i><span class="ng-binding">Permits and Licenses</span>
+                  </a></h4>
+                </dd>
+                <dd class="col-sm-6 col-md-4">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-users"></i><span class="ng-binding">Services and Safety</span>
+                  </a></h4>
+                </dd>
+                <dd class="col-sm-6 col-md-4">
+                  <h4><a ng-click="open(item)" href="" style="color: #BC2D07" class="">
+                    <i class="fa fa-folder-music"></i><span class="ng-binding">Culture & Recreation</span>
+                  </a></h4>
+                </dd>
+              </dl>
+            </div>
+          </main>
         </div>
-      </li>
-
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-money" href="#" style="color: #3C6526"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #3C6526">Payments &amp; Taxes</a></h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-briefcase" href="#" style="color: #67412C"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #67412C">Business</a></h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-bus" href="#" style="color: #14A88E"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #14A88E">Transportation</a></h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-user-md" href="#" style="color: #4DC3FF"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #4DC3FF">Health</a></h4>
-          </div>
-        </div>
-      </li>
-
-      <li class="col-sm-6 col-md-4">
-        <div class="row">
-          <div class="col-xs-2 col-md-2">
-            <h4 class="ng-scope"><a class="fa fa-home" href="#" style="color: #A4506C"></a></h4>
-          </div>
-          <div class="col-xs-10 col-md-10">
-            <h4><a class="ng-binding" href="" style="color: #A4506C">Property &amp; Housing</a></h4>
-          </div>
-        </div>
-      </li>
-    </ul>
-
-  </div><!-- .row -->
-
-</div> <!-- .action-box -->
+      </div>
+    </div><!-- .row -->
+  </div> <!-- .action-box -->
+</div><!-- .app-wrap -->
