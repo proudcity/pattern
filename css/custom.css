@@ -5169,7 +5169,8 @@ button.close {
   padding: 1.25rem; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.75rem;
+  margin-top: 0; }
 
 .card-subtitle {
   margin-top: -0.375rem;
@@ -5906,6 +5907,14 @@ ul.title-list li {
 label {
   font-weight: normal; }
 
+.table {
+  border: 1px solid #ddd; }
+  .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    border-top: 0; }
+
+.table > thead > tr > td.active, .table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th {
+  background-color: transparent; }
+
 .date-box {
   border: 4px solid #eeeeee;
   color: #777777;
@@ -6053,17 +6062,29 @@ img {
   padding: 6px 0;
   margin-top: 48px; }
   .footer-actions .nav > li > a {
-    color: #333333; }
+    color: #555555; }
     .footer-actions .nav > li > a:hover, .footer-actions .nav > li > a:active, .footer-actions .nav > li > a:focus {
       background: transparent;
       color: #2196F3; }
   .footer-actions .navbar-left.dropdown, .footer-actions .navbar-left > .social, .footer-actions .navbar-right.dropdown, .footer-actions .navbar-right > .social {
     padding: 6px 12px 6px 0; }
 
-footer.page-footer .footer-logo {
-  margin: 6px; }
-footer.page-footer, footer.page-footer a, footer.page-footer h2, footer.page-footer h3 {
-  color: #555555; }
+footer.page-footer {
+  font-size: 14px; }
+  footer.page-footer, footer.page-footer a, footer.page-footer h2, footer.page-footer h3, footer.page-footer h4, footer.page-footer h5, footer.page-footer h6 {
+    color: #777777; }
+  footer.page-footer h5 {
+    margin-bottom: 6px; }
+  footer.page-footer .footer-logo-wrapper h4 {
+    margin: 0;
+    line-height: 1.1em;
+    font-size: 30px; }
+    footer.page-footer .footer-logo-wrapper h4 small {
+      font-weight: bold;
+      color: #aaaaaa; }
+  footer.page-footer .footer-logo-wrapper .footer-logo {
+    margin-top: 24px;
+    margin-bottom: 6px; }
 
 @media screen and (min-width: 768px) {
   .full-container {
