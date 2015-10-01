@@ -7,13 +7,25 @@ $nav-user-overlay-z: 1050;
   max-width: 100%;
   overflow-x: hidden;
 
+  // Force for listing
+  &.navbar-force-static {
+    .navbar-fixed-bottom {
+      position: static!important;
+    }
+  }
+
+  &.topnav {
+    .navbar-fixed-top {
+      display: none;
+    }
+  }
+
   body {
     padding-top: 0;
     padding-bottom: $nav-height-short;
     position: relative;
     z-index: 0;
     left: 0;
-    @include transition(left .2s ease-out);
   }
 
   // Logo area

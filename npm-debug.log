@@ -1,0 +1,195 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'grunt-takana' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /home/alex/workspace/proudcity-pattern/package.json
+6 warn package.json proudcity-patternlibrary-boilerplate@0.0.1 No license field.
+7 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/connect-modrewrite/package.json
+8 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/grunt/package.json
+9 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/grunt-contrib-connect/package.json
+10 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/grunt-contrib-watch/package.json
+11 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/grunt-sass/package.json
+12 verbose installManyTop reading scoped package data from /home/alex/workspace/proudcity-pattern/node_modules/load-grunt-tasks/package.json
+13 info package.json connect-modrewrite@0.8.2 No license field.
+14 info package.json grunt@0.4.5 No license field.
+15 info package.json grunt-contrib-connect@0.8.0 No license field.
+16 info package.json grunt-contrib-watch@0.6.1 No license field.
+17 verbose readDependencies loading dependencies from /home/alex/workspace/proudcity-pattern/package.json
+18 silly cache add args [ 'grunt-takana', null ]
+19 verbose cache add spec grunt-takana
+20 silly cache add parsed spec { raw: 'grunt-takana',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'grunt-takana',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: '*',
+20 silly cache add   type: 'range' }
+21 silly addNamed grunt-takana@*
+22 verbose addNamed "*" is a valid semver range for grunt-takana
+23 silly addNameRange { name: 'grunt-takana', range: '*', hasData: false }
+24 silly mapToRegistry name grunt-takana
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/grunt-takana
+28 verbose addNameRange registry:https://registry.npmjs.org/grunt-takana not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/grunt-takana
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 10:20:12
+32 verbose request id 65f90039aba34d7c
+33 http request GET https://registry.npmjs.org/grunt-takana
+34 http 200 https://registry.npmjs.org/grunt-takana
+35 silly get cb [ 200,
+35 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 silly get     etag: '"9WXCCC98KG3WGWR2F6GJB11BC"',
+35 silly get     'content-type': 'application/json',
+35 silly get     'cache-control': 'max-age=60',
+35 silly get     'content-length': '23963',
+35 silly get     'accept-ranges': 'bytes',
+35 silly get     date: 'Thu, 01 Oct 2015 17:20:04 GMT',
+35 silly get     via: '1.1 varnish',
+35 silly get     age: '10',
+35 silly get     connection: 'keep-alive',
+35 silly get     'x-served-by': 'cache-lax1422-LAX',
+35 silly get     'x-cache': 'HIT',
+35 silly get     'x-cache-hits': '1',
+35 silly get     'x-timer': 'S1443720004.550482,VS0,VE0',
+35 silly get     vary: 'Accept' } ]
+36 verbose get saving grunt-takana to /root/.npm/registry.npmjs.org/grunt-takana/.cache.json
+37 silly addNameRange number 2 { name: 'grunt-takana', range: '*', hasData: true }
+38 silly addNameRange versions [ 'grunt-takana',
+38 silly addNameRange   [ '0.1.0',
+38 silly addNameRange     '0.1.1',
+38 silly addNameRange     '0.1.2',
+38 silly addNameRange     '0.2.0',
+38 silly addNameRange     '0.3.0',
+38 silly addNameRange     '0.3.1',
+38 silly addNameRange     '0.3.2',
+38 silly addNameRange     '0.4.0',
+38 silly addNameRange     '0.4.1',
+38 silly addNameRange     '0.5.0',
+38 silly addNameRange     '0.5.1',
+38 silly addNameRange     '0.5.2',
+38 silly addNameRange     '0.5.3',
+38 silly addNameRange     '1.0.0',
+38 silly addNameRange     '1.0.1',
+38 silly addNameRange     '1.0.2',
+38 silly addNameRange     '1.0.3',
+38 silly addNameRange     '1.0.4' ] ]
+39 silly addNamed grunt-takana@1.0.4
+40 verbose addNamed "1.0.4" is a plain semver version for grunt-takana
+41 silly mapToRegistry name grunt-takana
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/grunt-takana
+45 verbose addRemoteTarball https://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz not in flight; adding
+46 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz',
+46 verbose addRemoteTarball   '2c6e917a516609445830b4e6ee684fadbdfd058e' ]
+47 info retry fetch attempt 1 at 10:20:12
+48 info attempt registry request try #1 at 10:20:12
+49 http fetch GET https://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz
+50 http fetch 200 https://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz
+51 silly fetchAndShaCheck shasum 2c6e917a516609445830b4e6ee684fadbdfd058e
+52 verbose addTmpTarball /tmp/npm-7686-f2398636/registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz not in flight; adding
+53 verbose addTmpTarball already have metadata; skipping unpack for grunt-takana@1.0.4
+54 silly cache afterAdd grunt-takana@1.0.4
+55 verbose afterAdd /root/.npm/grunt-takana/1.0.4/package/package.json not in flight; writing
+56 verbose afterAdd /root/.npm/grunt-takana/1.0.4/package/package.json written
+57 silly install resolved [ { name: 'grunt-takana',
+57 silly install resolved     description: 'Live edit SCSS stylesheets',
+57 silly install resolved     version: '1.0.4',
+57 silly install resolved     homepage: 'https://github.com/mechio/grunt-takana',
+57 silly install resolved     author: { name: 'Mechio', email: 'code@mech.io' },
+57 silly install resolved     repository: { type: 'git', url: 'git://github.com/mechio/grunt-takana.git' },
+57 silly install resolved     bugs: { url: 'https://github.com/mechio/grunt-takana/issues' },
+57 silly install resolved     licenses: [ [Object] ],
+57 silly install resolved     engines: { node: '>= 0.8.0' },
+57 silly install resolved     scripts:
+57 silly install resolved      { test: 'grunt test',
+57 silly install resolved        preinstall: 'npm i -g takana && takana sublime:install' },
+57 silly install resolved     devDependencies:
+57 silly install resolved      { 'grunt-contrib-jshint': '~0.6.0',
+57 silly install resolved        'grunt-contrib-clean': '~0.4.0',
+57 silly install resolved        'grunt-contrib-nodeunit': '~0.2.0',
+57 silly install resolved        grunt: '~0.4.2',
+57 silly install resolved        execSync: '~1.0.1-pre' },
+57 silly install resolved     peerDependencies: { grunt: '~0.4.2' },
+57 silly install resolved     keywords: [ 'gruntplugin' ],
+57 silly install resolved     dependencies: { takana: '0.0.8' },
+57 silly install resolved     main: 'Gruntfile.js',
+57 silly install resolved     directories: { test: 'test' },
+57 silly install resolved     license: 'ISC',
+57 silly install resolved     _id: 'grunt-takana@1.0.4',
+57 silly install resolved     dist:
+57 silly install resolved      { shasum: '2c6e917a516609445830b4e6ee684fadbdfd058e',
+57 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz' },
+57 silly install resolved     _from: 'grunt-takana@*',
+57 silly install resolved     _npmVersion: '1.4.3',
+57 silly install resolved     _npmUser: { name: 'barnaby', email: 'bmalet@gmail.com' },
+57 silly install resolved     maintainers: [ [Object], [Object] ],
+57 silly install resolved     _shasum: '2c6e917a516609445830b4e6ee684fadbdfd058e',
+57 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-takana/-/grunt-takana-1.0.4.tgz' } ]
+58 info install grunt-takana@1.0.4 into /home/alex/workspace/proudcity-pattern
+59 info installOne grunt-takana@1.0.4
+60 verbose installOne of grunt-takana to /home/alex/workspace/proudcity-pattern not in flight; installing
+61 verbose lock using /root/.npm/_locks/grunt-takana-ed18b956b5b8eb7e.lock for /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+62 silly install write writing grunt-takana 1.0.4 to /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+63 verbose unbuild node_modules/grunt-takana
+64 silly gentlyRm /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana is being purged from base /home/alex/workspace/proudcity-pattern
+65 verbose gentlyRm don't care about contents; nuking /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+66 verbose tar unpack /root/.npm/grunt-takana/1.0.4/package.tgz
+67 verbose tar unpacking to /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+68 silly gentlyRm /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana is being purged
+69 verbose gentlyRm don't care about contents; nuking /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+70 silly gunzTarPerm modes [ '755', '644' ]
+71 silly gunzTarPerm extractEntry package.json
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm extractEntry README.md
+74 silly gunzTarPerm extractEntry Gruntfile.js
+75 silly gunzTarPerm extractEntry .jshintrc
+76 silly gunzTarPerm extractEntry LICENSE-MIT
+77 silly gunzTarPerm extractEntry tasks/takana.js
+78 silly gunzTarPerm extractEntry test/takana_test.js
+79 verbose write writing to /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana/package.json
+80 info preinstall grunt-takana@1.0.4
+81 verbose unsafe-perm in lifecycle false
+82 info grunt-takana@1.0.4 Failed to exec preinstall script
+83 verbose unlock done using /root/.npm/_locks/grunt-takana-ed18b956b5b8eb7e.lock for /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+84 verbose stack Error: grunt-takana@1.0.4 preinstall: `npm i -g takana && takana sublime:install`
+84 verbose stack Exit status 243
+84 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+84 verbose stack     at EventEmitter.emit (events.js:110:17)
+84 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+84 verbose stack     at ChildProcess.emit (events.js:110:17)
+84 verbose stack     at maybeClose (child_process.js:1015:16)
+84 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+85 verbose pkgid grunt-takana@1.0.4
+86 verbose cwd /home/alex/workspace/proudcity-pattern
+87 error Linux 3.16.0-4-amd64
+88 error argv "/usr/bin/node" "/usr/bin/npm" "install" "--save-dev" "grunt-takana"
+89 error node v0.12.7
+90 error npm  v2.11.3
+91 error code ELIFECYCLE
+92 error grunt-takana@1.0.4 preinstall: `npm i -g takana && takana sublime:install`
+92 error Exit status 243
+93 error Failed at the grunt-takana@1.0.4 preinstall script 'npm i -g takana && takana sublime:install'.
+93 error This is most likely a problem with the grunt-takana package,
+93 error not with npm itself.
+93 error Tell the author that this fails on your system:
+93 error     npm i -g takana && takana sublime:install
+93 error You can get their info via:
+93 error     npm owner ls grunt-takana
+93 error There is likely additional logging output above.
+94 verbose exit [ 1, true ]
+95 verbose unbuild node_modules/grunt-takana
+96 info preuninstall grunt-takana@1.0.4
+97 info uninstall grunt-takana@1.0.4
+98 verbose unbuild rmStuff grunt-takana@1.0.4 from /home/alex/workspace/proudcity-pattern/node_modules
+99 info postuninstall grunt-takana@1.0.4
+100 silly gentlyRm /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana is being purged from base /home/alex/workspace/proudcity-pattern
+101 verbose gentlyRm don't care about contents; nuking /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+102 silly vacuum-fs purging /home/alex/workspace/proudcity-pattern/node_modules/grunt-takana
+103 silly vacuum-fs quitting because other entries in /home/alex/workspace/proudcity-pattern/node_modules

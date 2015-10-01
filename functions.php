@@ -8,6 +8,7 @@
      $pageURL = htmlspecialchars( filter_var( $pageURL, FILTER_SANITIZE_URL ) );
      header("Location: $pageURL");
   }
+
  // Display title of each markup samples as a select option
   function listElementsAsOptions ($type) {
     $files = array();
@@ -131,6 +132,11 @@ echo '<li role="presentation" class="divider"></li><li role="presentation" class
         //echo '</div><!--/.colmd10-->';
         echo '</div><!--/.sg-section-->';
     endforeach;
+  }
+
+  function showMarkupItem($type, $filename) {
+    $file = 'markup/'.$type.'/'.$filename.'.html';
+    include($file);
   }
 
   // Display markup view & source

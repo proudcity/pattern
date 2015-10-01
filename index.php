@@ -23,7 +23,7 @@ else {
 }
 ?>
 <!DOCTYPE html>
-
+<html class="menu-option-footer<?php print empty($_GET['page']) ? ' navbar-force-static' : ' topnav' ?>">
 <head>
 <meta charset="utf-8">
 <title><?php echo($project_name)?></title>
@@ -103,13 +103,45 @@ else {
     </div>
 
   <?php else: ?>
+    <?php 
 
-    <?php showMarkupPage('layouts', $_GET['page']); ?>
+      //Admin pages
+      $pageReq = $_GET['page'];
+      if(!empty($pageReq) && strpos($pageReq, 'admin') === false) {
+        showMarkupItem('patterns', 'navbar');
+      }
+      
+      showMarkupPage('layouts', $pageReq); 
+    ?>
 
   <?php endif; ?>
 
 
 </div> <!-- row row-offcanvas row-offcanvas-left -->
+
+<!-- fake search / answers sections -->
+
+<div id="search-bg" ng-if="searchActive" ng-click="searchClose()">
+  <form class="form-inline get-started search-form align-{{settings.header.searchAlign}}" id="wrapper-search" ng-class="{'search-active': searchActive}">
+    <autocomplete ng-model="yourchoice" data="movies" on-type="updateMovies"></autocomplete>
+    <div class="input-group">
+      <input id="search-input" class="form-control input-lg" type="text" placeholder="How may we help you?" ng-focus="searchFocus()" ng-keypress="searchAutocomplete()" />
+      <span class="input-group-btn">
+        <button type="submit" value="Go" class="btn btn-primary btn-lg" ng-click="modal();"><i class="fa fa-search"></i></button>
+      </span>
+    </div>
+    <ul class="search-autosuggest ng-scope" ng-if="searchActive"><!-- ngRepeat: item in autocomplete --><li class="ng-scope" ng-repeat="item in autocomplete"><a href="" ng-click="searchAutocompleteClick(item)" class="ng-binding"><i class="fa fa-usd"></i> Pay my water bill</a></li><!-- end ngRepeat: item in autocomplete --><li class="ng-scope" ng-repeat="item in autocomplete"><a href="" ng-click="searchAutocompleteClick(item)" class="ng-binding"><i class="fa fa-question-circle"></i> How do I get a marriage license?</a></li><!-- end ngRepeat: item in autocomplete --><li class="ng-scope" ng-repeat="item in autocomplete"><a href="" ng-click="searchAutocompleteClick(item)" class="ng-binding"><i class="fa fa-usd"></i> Pay a parking ticket</a></li><!-- end ngRepeat: item in autocomplete --><li class="ng-scope" ng-repeat="item in autocomplete"><a href="" ng-click="searchAutocompleteClick(item)" class="ng-binding"><i class="fa fa-question-circle"></i> How do I get a copy of a birth certificate?</a></li><!-- end ngRepeat: item in autocomplete --><li class="ng-scope" ng-repeat="item in autocomplete"><a href="" ng-click="searchAutocompleteClick(item)" class="ng-binding"><i class="fa fa-exclamation-triangle"></i> File a complaint</a></li><!-- end ngRepeat: item in autocomplete --></ul>
+  </form>
+  <a href="" ng-click="searchClose()" class="search-close" ng-if="searchActive"><i class="fa fa-times fa-2x"></i></a>
+</div>
+<div id="search-311" ng-if="searchActive" ng-click="searchClose()">
+  <div class="app">
+    <img src="/images/imagedemo.jpg" />
+  </div>
+  <a href="" ng-click="searchClose()" class="search-close" ng-if="searchActive"><i class="fa fa-times fa-2x"></i></a>
+</div>
+
+<!-- END fake search / answers sections -->
 
 <!--/.sg-body-->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

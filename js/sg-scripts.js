@@ -1,3 +1,98 @@
+
+$(function() {
+  var menuOpen    = false,
+      searchOpen  = false,
+      answersOpen = false,
+      $body       = $('body');
+
+  $('.menu-button').click(function(e) {
+    if(searchOpen || answersOpen) {
+      if(menuOpen) {
+        $body.removeClass('active-311 search-active menu-nav-open');
+        searchOpen = false;
+        answersOpen = false;
+        menuOpen = false;
+      }
+      else {
+        $body.removeClass('active-311 search-active');
+        searchOpen = false;
+        answersOpen = false;
+        setTimeout(function() {
+          $body.addClass('menu-nav-open');
+          menuOpen = true;
+        }, 100);
+      }
+    }
+    else {
+      $body.toggleClass('menu-nav-open');
+      menuOpen = !menuOpen;
+    }
+    return false;
+  });
+
+
+  $('.311-button, .payments-button, .issue-button').click(function() {
+    if(searchOpen || menuOpen) {
+      if(answersOpen) {
+        $body.removeClass('active-311 search-active menu-nav-open');
+        searchOpen = false;
+        answersOpen = false;
+        menuOpen = false;
+      }
+      else {
+        $body.removeClass('menu-nav-open search-active');
+        searchOpen = false;
+        menuOpen = false;
+        setTimeout(function() {
+          $body.addClass('active-311');
+          answersOpen = true;
+        }, 100);
+      }
+    }
+    else {
+      $body.toggleClass('active-311');
+      answersOpen = !answersOpen;
+    }
+    return false;
+  });
+
+  $('.search-btn').click(function() {
+    if(answersOpen || menuOpen) {
+      if(searchOpen) {
+        $body.removeClass('active-311 search-active menu-nav-open');
+        searchOpen = false;
+        answersOpen = false;
+        menuOpen = false;
+      }
+      else {
+        $body.removeClass('menu-nav-open active-311');
+        answersOpen = false;
+        menuOpen = false;
+        setTimeout(function() {
+          $body.addClass('search-active');
+          searchOpen = true;
+        }, 100);
+      }
+    }
+    else {
+      $body.toggleClass('search-active');
+      searchOpen = !searchOpen;
+    }
+    return false;
+  });
+
+  $('.search-close').click(function() {
+    $body.removeClass('active-311 search-active menu-nav-open');
+    searchOpen = false;
+    answersOpen = false;
+    menuOpen = false;
+    return false;
+  });
+
+
+});
+
+
 /**
  * sg-scripts.js
  */
