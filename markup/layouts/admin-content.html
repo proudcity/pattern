@@ -1,0 +1,468 @@
+
+<Br/>
+
+<div class="container-fluid">
+<form class="card card-block form-inline">
+
+<div class="views-exposed-widget"><div class="form-item form-type-select form-item-operation form-group">
+ <select class="form-control form-select" id="edit-operation" name="operation"><option value="0">- Bulk operations -</option><option value="action::node_assign_owner_action">Change author</option><option value="action::views_bulk_operations_delete_item">Delete</option><option value="action::views_bulk_operations_modify_action">Change value</option><option value="action::node_make_sticky_action">Stick</option><option value="action::node_make_unsticky_action">Unstick</option><option value="action::node_promote_action">Promote to front page</option><option value="action::node_publish_action">Publish</option><option value="action::node_unpromote_action">Demote from front page</option><option value="action::node_unpublish_action">Unpublish</option></select>
+ <input type="submit" id="edit-submit--2" name="op" value="Apply" class="form-submit btn btn-success"></div>
+
+</div>
+
+
+
+
+  <div class="views-exposed-widgets ">
+          <div id="edit-title-wrapper" class="views-exposed-widget views-widget-filter-title">
+                  <label for="edit-title">
+            Title          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-title form-group">
+ <input class="form-control form-text" type="text" id="edit-title" name="title" value="" size="15"  placeholder="Title" maxlength="128">
+</div>
+        </div>
+              </div>
+          <div id="edit-type-wrapper" class="views-exposed-widget views-widget-filter-type">
+                  <label for="edit-type">
+            Type          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-type form-group">
+ <select class="form-control form-select" id="edit-type" name="type"><option value="All" selected="selected">- Type -</option><option value="event">Event</option><option value="landingpage">Landing Page</option><option value="news">News article</option><option value="page">Page</option><option value="webform">Webform</option></select>
+</div>
+        </div>
+              </div>
+          <div id="edit-author-wrapper" class="views-exposed-widget views-widget-filter-uid">
+                  <label for="edit-author">
+            Author          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-author form-group" role="application">
+ <input class="form-control form-text form-autocomplete" type="text" id="edit-author" name="author" size="15" placeholder="Author"  value="" maxlength="128" autocomplete="OFF" aria-autocomplete="list"><input type="hidden" id="edit-author-autocomplete" value="http://localhost:32810/admin/views/ajax/autocomplete/user" disabled="disabled" class="autocomplete autocomplete-processed">
+<span class="element-invisible" aria-live="assertive" id="edit-author-autocomplete-aria-live"></span></div>
+        </div>
+              </div>
+          <div id="edit-status-wrapper" class="views-exposed-widget views-widget-filter-status">
+                  <label for="edit-status">
+            Published          </label>
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-status form-group">
+ <select class="form-control form-select" id="edit-status" name="status"><option value="All" selected="selected">- Published -</option><option value="1">Yes</option><option value="0">No</option></select>
+</div>
+        </div>
+              </div>
+    
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-admin-views-node" name="" value="Filter" class="form-submit btn btn-default btn-primary">    </div>
+          <div class="views-exposed-widget views-reset-button">
+        <input type="submit" id="edit-reset" name="op" value="Reset" class="form-submit btn btn-link">      </div>
+      </div>
+      <div class="clearfix"></div>
+</form>
+
+
+
+
+
+
+
+<table class="views-table sticky-enabled cols-6 table table-striped tableheader-processed sticky-table">
+               <thead>
+        <tr>
+                      <th class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox checkbox">
+  <label><input class="vbo-table-select-all form-checkbox" type="checkbox" value="1" style="display: inline-block;"> </label>
+</div>
+            </th>
+                      <th class="views-field views-field-title">
+              <a href="/admin/content?title=&amp;type=All&amp;author=&amp;status=All&amp;vid=All&amp;order=title&amp;sort=asc" title="sort by Title" class="active">Title</a>            </th>
+                      <th class="views-field views-field-type">
+              <a href="/admin/content?title=&amp;type=All&amp;author=&amp;status=All&amp;vid=All&amp;order=type&amp;sort=asc" title="sort by Type" class="active">Type</a>            </th>
+                      <th class="views-field views-field-name">
+              <a href="/admin/content?title=&amp;type=All&amp;author=&amp;status=All&amp;vid=All&amp;order=name&amp;sort=asc" title="sort by Author" class="active">Author</a>            </th>
+                      <th class="views-field views-field-changed active">
+              <a href="/admin/content?title=&amp;type=All&amp;author=&amp;status=All&amp;vid=All&amp;order=changed&amp;sort=asc" title="sort by Updated" class="active">Updated<img src="http://localhost:32810/misc/arrow-asc.png" width="13" height="13" alt="sort ascending" title="sort ascending"></a>            </th>
+                      <th class="views-field views-field-edit-node">
+              Operations            </th>
+                  </tr>
+      </thead>
+        <tbody>
+              <tr class="odd views-row-first">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-0 checkbox">
+  <label for="edit-views-bulk-operations-0"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-0" name="views_bulk_operations[0]" value="17"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/iaceo-quibus-singularis-validus">Iaceo Quibus Singularis Validus</a>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <a href="/users/admin" title="View user profile." class="username">admin</a>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 23:12            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/17/edit?destination=admin/content">edit</a>&emsp;<a href="/node/17/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-1 checkbox">
+  <label for="edit-views-bulk-operations-1"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-1" name="views_bulk_operations[1]" value="12"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/facilisi-ideo-quia">Facilisi Ideo Quia</a>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <a href="/users/admin" title="View user profile." class="username">admin</a>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/12/edit?destination=admin/content">edit</a>&emsp;<a href="/node/12/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-2 checkbox">
+  <label for="edit-views-bulk-operations-2"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-2" name="views_bulk_operations[2]" value="7"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/appellatio-exputo">Appellatio Exputo</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/7/edit?destination=admin/content">edit</a>&emsp;<a href="/node/7/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-3 checkbox">
+  <label for="edit-views-bulk-operations-3"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-3" name="views_bulk_operations[3]" value="2"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/acsi-valetudo">Acsi Valetudo</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/2/edit?destination=admin/content">edit</a>&emsp;<a href="/node/2/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-4 checkbox">
+  <label for="edit-views-bulk-operations-4"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-4" name="views_bulk_operations[4]" value="18"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/minim-odio-similis">Minim Odio Similis</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Landing Page            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/18/edit?destination=admin/content">edit</a>&emsp;<a href="/node/18/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-5 checkbox">
+  <label for="edit-views-bulk-operations-5"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-5" name="views_bulk_operations[5]" value="13"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/appellatio-vel">Appellatio Vel</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/13/edit?destination=admin/content">edit</a>&emsp;<a href="/node/13/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-6 checkbox">
+  <label for="edit-views-bulk-operations-6"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-6" name="views_bulk_operations[6]" value="8"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/dolor-dolore-mauris-vulpes">Dolor Dolore Mauris Vulpes</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Landing Page            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/8/edit?destination=admin/content">edit</a>&emsp;<a href="/node/8/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-7 checkbox">
+  <label for="edit-views-bulk-operations-7"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-7" name="views_bulk_operations[7]" value="3"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/feugiat-ibidem-vicis">Feugiat Ibidem Vicis</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/3/edit?destination=admin/content">edit</a>&emsp;<a href="/node/3/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-8 checkbox">
+  <label for="edit-views-bulk-operations-8"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-8" name="views_bulk_operations[8]" value="19"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/ea">Ea</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/19/edit?destination=admin/content">edit</a>&emsp;<a href="/node/19/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-9 checkbox">
+  <label for="edit-views-bulk-operations-9"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-9" name="views_bulk_operations[9]" value="14"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/iustum-nostrud-wisi">Iustum Nostrud Wisi</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/14/edit?destination=admin/content">edit</a>&emsp;<a href="/node/14/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-10 checkbox">
+  <label for="edit-views-bulk-operations-10"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-10" name="views_bulk_operations[10]" value="9"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/causa-humo-magna-verto">Causa Humo Magna Verto</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/9/edit?destination=admin/content">edit</a>&emsp;<a href="/node/9/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-11 checkbox">
+  <label for="edit-views-bulk-operations-11"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-11" name="views_bulk_operations[11]" value="4"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/elit-ibidem-macto-ratis">Elit Ibidem Macto Ratis</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Landing Page            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/4/edit?destination=admin/content">edit</a>&emsp;<a href="/node/4/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-12 checkbox">
+  <label for="edit-views-bulk-operations-12"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-12" name="views_bulk_operations[12]" value="20"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/dolor">Dolor</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Landing Page            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/20/edit?destination=admin/content">edit</a>&emsp;<a href="/node/20/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-13 checkbox">
+  <label for="edit-views-bulk-operations-13"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-13" name="views_bulk_operations[13]" value="15"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/abluo-aliquam-feugiat-utrum">Abluo Aliquam Feugiat Utrum</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/15/edit?destination=admin/content">edit</a>&emsp;<a href="/node/15/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-14 checkbox">
+  <label for="edit-views-bulk-operations-14"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-14" name="views_bulk_operations[14]" value="10"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/consectetuer">Consectetuer</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/10/edit?destination=admin/content">edit</a>&emsp;<a href="/node/10/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-15 checkbox">
+  <label for="edit-views-bulk-operations-15"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-15" name="views_bulk_operations[15]" value="5"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/lenis-proprius">Lenis Proprius</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/5/edit?destination=admin/content">edit</a>&emsp;<a href="/node/5/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-16 checkbox">
+  <label for="edit-views-bulk-operations-16"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-16" name="views_bulk_operations[16]" value="21"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/hos-lobortis-occuro">Hos Lobortis Occuro</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/21/edit?destination=admin/content">edit</a>&emsp;<a href="/node/21/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-17 checkbox">
+  <label for="edit-views-bulk-operations-17"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-17" name="views_bulk_operations[17]" value="16"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/dolor-facilisis-nutus-vel">Dolor Facilisis Nutus Vel</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              News article            </td>
+                      <td class="views-field views-field-name">
+              <a href="/users/admin" title="View user profile." class="username">admin</a>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/16/edit?destination=admin/content">edit</a>&emsp;<a href="/node/16/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-18 checkbox">
+  <label for="edit-views-bulk-operations-18"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-18" name="views_bulk_operations[18]" value="11"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/oppeto-tincidunt">Oppeto Tincidunt</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Event            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/11/edit?destination=admin/content">edit</a>&emsp;<a href="/node/11/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="even">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-19 checkbox">
+  <label for="edit-views-bulk-operations-19"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-19" name="views_bulk_operations[19]" value="6"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/cui-duis">Cui Duis</a>&nbsp; <span class="marker">new</span>            </td>
+                      <td class="views-field views-field-type">
+              Landing Page            </td>
+                      <td class="views-field views-field-name">
+              <span class="username">Anonymous (not verified)</span>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 22:31            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/6/edit?destination=admin/content">edit</a>&emsp;<a href="/node/6/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+              <tr class="odd views-row-last">
+                      <td class="views-field views-field-views-bulk-operations">
+              <div class="form-item form-type-checkbox form-item-views-bulk-operations-20 checkbox">
+  <label for="edit-views-bulk-operations-20"><input class="vbo-select form-checkbox" type="checkbox" id="edit-views-bulk-operations-20" name="views_bulk_operations[20]" value="1"> </label>
+</div>
+            </td>
+                      <td class="views-field views-field-title">
+              <a href="/content/test">test</a>            </td>
+                      <td class="views-field views-field-type">
+              Webform            </td>
+                      <td class="views-field views-field-name">
+              <a href="/users/admin" title="View user profile." class="username">admin</a>            </td>
+                      <td class="views-field views-field-changed active">
+              09/30/2015 - 21:02            </td>
+                      <td class="views-field views-field-edit-node">
+              <a href="/node/1/edit?destination=admin/content">edit</a>&emsp;<a href="/node/1/delete?destination=admin/content">delete</a>            </td>
+                  </tr>
+          </tbody>
+  </table>
+
+
+
+
+
+
+
+</div>
+
+<style>
+.views-exposed-widget {
+    float: left;
+    padding: .5em 1em 0 0;
+}
+.views-exposed-widget label {
+  display: none;
+}
+.marker, .form-required {
+    color: #aaa;
+}
+</style>
