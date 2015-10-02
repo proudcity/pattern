@@ -6170,6 +6170,201 @@ img {
   .breadcrumb.clean {
     padding-bottom: 16px; } }
 
+.menu-option-footer {
+  max-width: 100%;
+  overflow-x: hidden; }
+  .menu-option-footer.navbar-force-static .navbar-external {
+    position: static !important; }
+  .menu-option-footer.topnav .navbar-fixed-top {
+    display: none; }
+  .menu-option-footer body {
+    padding-top: 0;
+    padding-bottom: 54px;
+    position: relative;
+    z-index: 0;
+    left: 0; }
+
+.navbar-external #logo-menu {
+  display: none; }
+.navbar-external .navbar-btn {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 10px;
+  color: #9d9d9d;
+  margin-top: 4.5px;
+  margin-bottom: 0;
+  -webkit-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
+  -moz-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
+  transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in; }
+  .navbar-external .navbar-btn, .navbar-external .navbar-btn i {
+    height: 45px;
+    vertical-align: middle;
+    line-height: 42.75px; }
+  .navbar-external .navbar-btn i {
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    vertical-align: middle; }
+  .navbar-external .navbar-btn:hover {
+    background-color: #404040;
+    color: #fff; }
+  .navbar-external .navbar-btn.menu-button {
+    position: relative; }
+    .navbar-external .navbar-btn.menu-button .hamburger {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 45px;
+      height: 45px;
+      font-size: 0;
+      text-indent: -9999px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s; }
+      .navbar-external .navbar-btn.menu-button .hamburger:focus {
+        outline: none; }
+      .navbar-external .navbar-btn.menu-button .hamburger span {
+        display: block;
+        position: absolute;
+        top: 21.5px;
+        left: 13px;
+        right: 13px;
+        height: 2px;
+        background: #9d9d9d;
+        -webkit-transition: background 0s 0.2s;
+        -moz-transition: background 0s 0.2s;
+        transition: background 0s 0.2s; }
+        .navbar-external .navbar-btn.menu-button .hamburger span:before, .navbar-external .navbar-btn.menu-button .hamburger span:after {
+          position: absolute;
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #9d9d9d;
+          content: "";
+          -webkit-transition-duration: 0.2s, 0.2s;
+          -moz-transition-duration: 0.2s, 0.2s;
+          transition-duration: 0.2s, 0.2s;
+          -webkit-transition-delay: 0.2s, 0s;
+          -moz-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s; }
+        .navbar-external .navbar-btn.menu-button .hamburger span:before {
+          -webkit-transition-property: top, -webkit-transform;
+          -moz-transition-property: top, -moz-transform;
+          transition-property: top, transform;
+          top: -6px; }
+        .navbar-external .navbar-btn.menu-button .hamburger span:after {
+          -webkit-transition-property: bottom, -webkit-transform;
+          -moz-transition-property: bottom, -moz-transform;
+          transition-property: bottom, transform;
+          bottom: -6px; }
+.menu-nav-open .navbar-external .navbar-btn.menu-button {
+  position: relative; }
+  .menu-nav-open .navbar-external .navbar-btn.menu-button .hamburger span {
+    background: none; }
+    .menu-nav-open .navbar-external .navbar-btn.menu-button .hamburger span:after, .menu-nav-open .navbar-external .navbar-btn.menu-button .hamburger span:before {
+      -webkit-transition-delay: 0s, 0.2s;
+      -moz-transition-delay: 0s, 0.2s;
+      transition-delay: 0s, 0.2s; }
+    .menu-nav-open .navbar-external .navbar-btn.menu-button .hamburger span:before {
+      top: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .menu-nav-open .navbar-external .navbar-btn.menu-button .hamburger span:after {
+      bottom: 0;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+.navbar-external .navbar-header img {
+  display: inline-block;
+  max-width: 300px;
+  height: auto; }
+
+@media screen and (max-width: 767px) {
+  .navbar-external {
+    position: static;
+    min-height: 0; }
+    .navbar-external #main-menu, .navbar-external .menu-box {
+      height: 56px;
+      position: fixed;
+      bottom: -2px;
+      width: 100%; }
+    .navbar-external #main-menu {
+      -webkit-transition: height 0.2s ease, margin-bottom 0.2s ease;
+      -moz-transition: height 0.2s ease, margin-bottom 0.2s ease;
+      transition: height 0.2s ease, margin-bottom 0.2s ease;
+      overflow: hidden;
+      z-index: 1049;
+      background: #000000;
+      margin-bottom: -54px;
+      margin-left: 0;
+      margin-right: 0; }
+    .menu-nav-open .navbar-external #main-menu {
+      height: 105%;
+      margin-bottom: 0; }
+    .navbar-external .menu-box {
+      background: #000000;
+      text-align: center;
+      padding-bottom: 2px;
+      z-index: 1051; }
+    .navbar-external .navbar-fixed-bottom .navbar-nav {
+      padding: 54px 20px; } }
+
+@media screen and (max-width: 991px) {
+  .navbar-external .navbar-btn {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px; }
+    .navbar-external .navbar-btn, .navbar-external .navbar-btn i {
+      overflow: hidden;
+      width: 47px; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-external {
+    z-index: 1051; }
+    .navbar-external .menu-box {
+      float: right !important;
+      min-width: 125px; }
+      .navbar-external .menu-box .btn-toolbar.pull-right {
+        margin-left: 0; }
+    .navbar-external .navbar-header {
+      float: none; }
+    .navbar-external .menu-button {
+      display: none; } }
+
+@media screen and (min-width: 1280px) {
+  .menu-option-footer body {
+    padding-top: 54px;
+    padding-bottom: 0; }
+  .navbar-external {
+    bottom: auto;
+    top: 0px; }
+    .navbar-external #logo-menu {
+      display: block; }
+    .navbar-external #main-menu {
+      float: right;
+      margin-right: 10px; }
+    .navbar-external + .navbar {
+      display: none; }
+    .navbar-external .navbar-btn {
+      margin-top: 4px; }
+      .navbar-external .navbar-btn i {
+        margin-right: 0.25em; }
+      .navbar-external .navbar-btn.search-btn i {
+        margin-right: 0; } }
+
 .btn-block {
   display: block; }
 
@@ -6447,290 +6642,101 @@ footer.page-footer {
   .padding-lg-right {
     padding-right: 40px; } }
 
-.menu-option-footer {
-  max-width: 100%;
-  overflow-x: hidden; }
-  .menu-option-footer.navbar-force-static .navbar-fixed-bottom {
-    position: static !important; }
-  .menu-option-footer.topnav .navbar-fixed-top {
-    display: none; }
-  .menu-option-footer body {
-    padding-top: 0;
-    padding-bottom: 54px;
-    position: relative;
-    z-index: 0;
-    left: 0; }
-  .menu-option-footer #logo-menu {
-    display: none; }
-  .menu-option-footer .navbar-btn {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-radius: 10px;
-    color: #9d9d9d;
-    margin-top: 4.5px;
-    margin-bottom: 0;
-    -webkit-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
-    -moz-transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in;
-    transition: margin-top 0.2s ease-in-out, background-color 0.1s ease-in; }
-    .menu-option-footer .navbar-btn, .menu-option-footer .navbar-btn i {
-      height: 45px;
-      vertical-align: middle;
-      line-height: 42.75px; }
-    .menu-option-footer .navbar-btn i {
-      -webkit-transition: -webkit-transform 0.2s linear;
-      -moz-transition: -moz-transform 0.2s linear;
-      transition: transform 0.2s linear;
-      vertical-align: middle; }
-    .menu-option-footer .navbar-btn:hover {
-      background-color: #404040;
-      color: #fff; }
-    .menu-option-footer .navbar-btn.menu-button {
-      position: relative; }
-      .menu-option-footer .navbar-btn.menu-button .hamburger {
-        display: block;
-        position: relative;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-        width: 45px;
-        height: 45px;
-        font-size: 0;
-        text-indent: -9999px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        box-shadow: none;
-        border-radius: none;
-        border: none;
-        cursor: pointer;
-        transition: background 0.2s; }
-        .menu-option-footer .navbar-btn.menu-button .hamburger:focus {
-          outline: none; }
-        .menu-option-footer .navbar-btn.menu-button .hamburger span {
-          display: block;
-          position: absolute;
-          top: 21.5px;
-          left: 13px;
-          right: 13px;
-          height: 2px;
-          background: #9d9d9d;
-          -webkit-transition: background 0s 0.2s;
-          -moz-transition: background 0s 0.2s;
-          transition: background 0s 0.2s; }
-          .menu-option-footer .navbar-btn.menu-button .hamburger span:before, .menu-option-footer .navbar-btn.menu-button .hamburger span:after {
-            position: absolute;
-            display: block;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #9d9d9d;
-            content: "";
-            -webkit-transition-duration: 0.2s, 0.2s;
-            -moz-transition-duration: 0.2s, 0.2s;
-            transition-duration: 0.2s, 0.2s;
-            -webkit-transition-delay: 0.2s, 0s;
-            -moz-transition-delay: 0.2s, 0s;
-            transition-delay: 0.2s, 0s; }
-          .menu-option-footer .navbar-btn.menu-button .hamburger span:before {
-            -webkit-transition-property: top, -webkit-transform;
-            -moz-transition-property: top, -moz-transform;
-            transition-property: top, transform;
-            top: -6px; }
-          .menu-option-footer .navbar-btn.menu-button .hamburger span:after {
-            -webkit-transition-property: bottom, -webkit-transform;
-            -moz-transition-property: bottom, -moz-transform;
-            transition-property: bottom, transform;
-            bottom: -6px; }
-  .menu-option-footer .menu-nav-open .navbar-btn.menu-button {
-    position: relative; }
-    .menu-option-footer .menu-nav-open .navbar-btn.menu-button .hamburger span {
-      background: none; }
-      .menu-option-footer .menu-nav-open .navbar-btn.menu-button .hamburger span:after, .menu-option-footer .menu-nav-open .navbar-btn.menu-button .hamburger span:before {
-        -webkit-transition-delay: 0s, 0.2s;
-        -moz-transition-delay: 0s, 0.2s;
-        transition-delay: 0s, 0.2s; }
-      .menu-option-footer .menu-nav-open .navbar-btn.menu-button .hamburger span:before {
-        top: 0;
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
-      .menu-option-footer .menu-nav-open .navbar-btn.menu-button .hamburger span:after {
-        bottom: 0;
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg); }
-  .menu-option-footer .navbar-header img {
-    display: inline-block;
-    max-width: 300px;
-    height: auto; }
-  @media screen and (max-width: 767px) {
-    .menu-option-footer .navbar-fixed-bottom {
-      position: static;
-      min-height: 0; }
-    .menu-option-footer #main-menu, .menu-option-footer .menu-box {
-      height: 56px;
-      position: fixed;
-      bottom: -2px;
-      width: 100%; }
-    .menu-option-footer #main-menu {
-      -webkit-transition: height 0.2s ease, margin-bottom 0.2s ease;
-      -moz-transition: height 0.2s ease, margin-bottom 0.2s ease;
-      transition: height 0.2s ease, margin-bottom 0.2s ease;
-      overflow: hidden;
-      z-index: 1049;
-      background: #000000;
-      margin-bottom: -54px;
-      margin-left: 0;
-      margin-right: 0; }
-    .menu-option-footer .menu-nav-open #main-menu {
-      height: 105%;
-      margin-bottom: 0; }
-    .menu-option-footer .menu-box {
-      background: #000000;
-      text-align: center;
-      padding-bottom: 2px;
-      z-index: 1051; }
-    .menu-option-footer .navbar-fixed-bottom .navbar-nav {
-      padding: 54px 20px; } }
-  @media screen and (max-width: 991px) {
-    .menu-option-footer .navbar-btn {
-      padding-left: 0;
-      padding-right: 0;
-      font-size: 18px; }
-      .menu-option-footer .navbar-btn, .menu-option-footer .navbar-btn i {
-        overflow: hidden;
-        width: 47px; } }
-  @media screen and (min-width: 768px) {
-    .menu-option-footer .navbar-fixed-bottom {
-      z-index: 1051; }
-    .menu-option-footer .menu-box {
-      float: right !important;
-      min-width: 125px; }
-      .menu-option-footer .menu-box .btn-toolbar.pull-right {
-        margin-left: 0; }
-    .menu-option-footer .navbar-header {
-      float: none; }
-    .menu-option-footer .menu-button {
-      display: none; } }
-  @media screen and (min-width: 1280px) {
-    .menu-option-footer body {
-      padding-top: 54px;
-      padding-bottom: 0; }
-    .menu-option-footer #logo-menu {
-      display: block; }
-    .menu-option-footer .navbar-fixed-bottom {
-      bottom: auto;
-      top: 0px; }
-    .menu-option-footer #main-menu {
-      float: right;
-      margin-right: 10px; }
-    .menu-option-footer .navbar-fixed-bottom + .navbar {
-      display: none; }
-    .menu-option-footer .navbar-btn {
-      margin-top: 4px; }
-      .menu-option-footer .navbar-btn i {
-        margin-right: 0.25em; }
-      .menu-option-footer .navbar-btn.search-btn i {
-        margin-right: 0; } }
-  .menu-option-footer ul.search-autosuggest {
-    padding: 0;
-    margin-top: 1em;
-    margin-left: -12px; }
-    .menu-option-footer ul.search-autosuggest li {
-      list-style: none; }
-      .menu-option-footer ul.search-autosuggest li a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        min-height: 2em;
-        color: #000000;
-        line-height: 1.5em;
-        font-weight: bold; }
-        .menu-option-footer ul.search-autosuggest li a:hover {
-          color: #2196F3; }
-      .menu-option-footer ul.search-autosuggest li i {
-        font-size: 1.5em;
-        display: block;
-        float: left;
-        text-align: center;
-        width: 40px; }
-  .menu-option-footer #search-bg {
-    left: 110%; }
-  .menu-option-footer #search-311 {
-    left: -110%; }
-  .menu-option-footer #search-bg, .menu-option-footer #search-311 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 1;
-    z-index: 1050;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
-    -webkit-transition: left 0.3s ease-in 0s;
-    -moz-transition: left 0.3s ease-in 0s;
-    transition: left 0.3s ease-in 0s; }
-    .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
-      padding: 15px;
+.menu-option-footer ul.search-autosuggest {
+  padding: 0;
+  margin-top: 1em;
+  margin-left: -12px; }
+  .menu-option-footer ul.search-autosuggest li {
+    list-style: none; }
+    .menu-option-footer ul.search-autosuggest li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      min-height: 2em;
       color: #000000;
-      position: absolute;
-      right: 0;
-      top: 0px; }
-    .menu-option-footer #search-bg form, .menu-option-footer #search-311 form {
-      margin-top: 36px;
-      padding: 30px;
-      max-width: 500px;
-      margin-right: auto;
-      margin-left: auto; }
+      line-height: 1.5em;
+      font-weight: bold; }
+      .menu-option-footer ul.search-autosuggest li a:hover {
+        color: #2196F3; }
+    .menu-option-footer ul.search-autosuggest li i {
+      font-size: 1.5em;
+      display: block;
+      float: left;
+      text-align: center;
+      width: 40px; }
+.menu-option-footer #search-bg {
+  left: 110%; }
+.menu-option-footer #search-311 {
+  left: -110%; }
+.menu-option-footer #search-bg, .menu-option-footer #search-311 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1;
+  z-index: 1050;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: left 0.3s ease-in 0s;
+  -moz-transition: left 0.3s ease-in 0s;
+  transition: left 0.3s ease-in 0s; }
+  .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
+    padding: 15px;
+    color: #000000;
+    position: absolute;
+    right: 0;
+    top: 0px; }
+  .menu-option-footer #search-bg form, .menu-option-footer #search-311 form {
+    margin-top: 36px;
+    padding: 30px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto; }
+.menu-option-footer .search-active #search-bg {
+  opacity: 1;
+  left: 0; }
+.menu-option-footer .active-311 #search-311 {
+  opacity: 1;
+  left: 0; }
+.menu-option-footer .app {
+  text-align: center; }
+  .menu-option-footer .app img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px; }
+@media screen and (max-width: 767px) {
+  .menu-option-footer .affix {
+    position: relative !important;
+    top: 0 !important; }
+  .menu-option-footer #search-bg .search-close i {
+    font-size: 2em; } }
+@media screen and (min-width: 768px) {
+  .menu-option-footer #search-bg, .menu-option-footer #search-311 {
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: opacity 0.3s ease-in-out, z-index 0.2s linear;
+    -moz-transition: opacity 0.3s ease-in-out, z-index 0.2s linear;
+    transition: opacity 0.3s ease-in-out, z-index 0.2s linear; }
   .menu-option-footer .search-active #search-bg {
+    z-index: 1050;
     opacity: 1;
     left: 0; }
   .menu-option-footer .active-311 #search-311 {
+    z-index: 1050;
     opacity: 1;
     left: 0; }
-  .menu-option-footer .app {
-    text-align: center; }
-    .menu-option-footer .app img {
-      display: inline-block;
-      max-width: 100%;
-      height: auto;
-      margin-top: 50px; }
-  @media screen and (max-width: 767px) {
-    .menu-option-footer .affix {
-      position: relative !important;
-      top: 0 !important; }
-    .menu-option-footer #search-bg .search-close i {
-      font-size: 2em; } }
-  @media screen and (min-width: 768px) {
-    .menu-option-footer #search-bg, .menu-option-footer #search-311 {
-      left: 0;
-      opacity: 0;
-      z-index: -1;
-      -webkit-transition: opacity 0.3s ease-in-out, z-index 0.2s linear;
-      -moz-transition: opacity 0.3s ease-in-out, z-index 0.2s linear;
-      transition: opacity 0.3s ease-in-out, z-index 0.2s linear; }
-    .menu-option-footer .search-active #search-bg {
-      z-index: 1050;
-      opacity: 1;
-      left: 0; }
-    .menu-option-footer .active-311 #search-311 {
-      z-index: 1050;
-      opacity: 1;
-      left: 0; }
-    .menu-option-footer ul.search-autosuggest li a {
-      font-size: 1.5em;
-      line-height: 2em; }
-    .menu-option-footer ul.search-autosuggest li i {
-      font-size: 2em;
-      width: 60px; } }
-  @media screen and (min-width: 1280px) {
-    .menu-option-footer #search-bg, .menu-option-footer #search-311 {
-      padding-top: 100px; }
-      .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
-        top: 50px; } }
+  .menu-option-footer ul.search-autosuggest li a {
+    font-size: 1.5em;
+    line-height: 2em; }
+  .menu-option-footer ul.search-autosuggest li i {
+    font-size: 2em;
+    width: 60px; } }
+@media screen and (min-width: 1280px) {
+  .menu-option-footer #search-bg, .menu-option-footer #search-311 {
+    padding-top: 100px; }
+    .menu-option-footer #search-bg .search-close, .menu-option-footer #search-311 .search-close {
+      top: 50px; } }
