@@ -6170,6 +6170,11 @@ img {
   .breadcrumb.clean {
     padding-bottom: 16px; } }
 
+.nav [data-toggle] i.pull-right {
+  line-height: 1.5em; }
+.nav [data-toggle].collapsed .fa-angle-down::before {
+  content: "\f105"; }
+
 .menu-option-footer {
   max-width: 100%;
   overflow-x: hidden; }
