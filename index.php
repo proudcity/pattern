@@ -107,11 +107,15 @@ else {
 
       //Admin pages
       $pageReq = $_GET['page'];
-      if(!empty($pageReq) && strpos($pageReq, 'admin') === false) {
+      if(strpos($pageReq, 'admin') === false) {
         showMarkupItem('patterns', 'navbar');
       }
       
       showMarkupPage('layouts', $pageReq);
+
+      if(strpos($pageReq, 'admin') === false) {
+        showMarkupItem('patterns', 'footer');
+      }
     ?>
 
   <?php endif; ?>

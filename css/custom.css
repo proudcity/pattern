@@ -5987,7 +5987,7 @@ label {
     .nav-contain .nav-pills li:last-child {
       padding-right: 0; }
     .nav-contain .nav-pills li a {
-      background: #626262; }
+      background-color: #000000; }
       .nav-contain .nav-pills li a, .nav-contain .nav-pills li a:hover, .nav-contain .nav-pills li a:focus {
         color: #FFF; }
     .nav-contain .nav-pills li:not(.active) a:hover, .nav-contain .nav-pills li:not(.active) a:focus {
@@ -6089,7 +6089,6 @@ label {
       font-size: 28px;
       display: block; }
     .nav-contain .nav-pills li a {
-      background-color: #000000;
       font-family: "Lato", sans-serif;
       font-weight: 500; }
   .action-box dl > dd {
@@ -6423,6 +6422,30 @@ footer.page-footer {
   margin: 0; }
   .page-header, .page-header h1, .page-header h2, .page-header h3 {
     color: #2196F3; }
+
+.padding-xs-left {
+  padding-left: 40px; }
+
+.padding-xs-right {
+  padding-right: 40px; }
+
+@media screen and (min-width: 768px) {
+  .padding-sm-left {
+    padding-left: 40px; }
+  .padding-sm-right {
+    padding-right: 40px; } }
+
+@media screen and (min-width: 992px) {
+  .padding-md-left {
+    padding-left: 40px; }
+  .padding-md-right {
+    padding-right: 40px; } }
+
+@media screen and (min-width: 1280px) {
+  .padding-lg-left {
+    padding-left: 40px; }
+  .padding-lg-right {
+    padding-right: 40px; } }
 
 .menu-option-footer {
   max-width: 100%;
