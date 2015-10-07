@@ -63,8 +63,8 @@ else {
       <button type="button" class="btn btn-primary" data-toggle="offcanvas"><i class="fa fa-bars"></i></button>
     </div>
     <div class="navbar-header">
-      <a class="navbar-brand" href=""><img class="logo" src="http://www.getproudcity.com/images/logo.png" alt="Home" style="height: 30px;"></a>
-      <a class="navbar-brand" href=""><?php echo($project_name)?></a>
+      <a class="navbar-brand" href=""><img class="logo" src="/images/logo-white.png" alt="Home" style="height: 30px;"></a>
+      <a class="navbar-brand pattern-text" href="">Pattern Library</a>
     </div>
   </div>
   <!--/.sg-header-->

@@ -6506,6 +6506,90 @@ img {
   .social-wall li {
     width: 31%; } }
 
+.now-feed {
+  position: relative;
+  margin-top: 20px; }
+  .now-feed:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin-left: -1.5px;
+    background-color: #eeeeee;
+    display: block;
+    left: 15px; }
+  .now-feed > * {
+    padding-left: 40px;
+    margin-bottom: 30px; }
+  .now-feed img {
+    display: block;
+    width: 100%; }
+  .now-feed .feed-icon {
+    float: left;
+    background: #e1e1e1;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 31.5px;
+    text-align: center;
+    margin-left: -40px;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; }
+    .now-feed .feed-icon i, .now-feed .feed-icon:hover i {
+      color: #888888; }
+    .now-feed .feed-icon:hover {
+      background: #d4d4d4; }
+
+@media screen and (min-width: 768px) {
+  .now-feed {
+    position: relative; }
+    .now-feed:before {
+      left: 50%; }
+    .now-feed .feed-icon {
+      border-radius: 25px;
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      line-height: 52.5px; }
+    .now-feed > * {
+      margin-bottom: 0;
+      clear: both;
+      width: 50%;
+      padding-right: 70px;
+      padding-left: 0;
+      float: left;
+      margin-left: 0%; }
+      .now-feed > * .feed-icon {
+        float: right;
+        margin-left: 0;
+        margin-right: -95px; }
+    .now-feed.item-right > *:nth-child(2n+1), .now-feed.item-left > *:nth-child(2n) {
+      float: right;
+      margin-right: 0%;
+      padding-left: 70px; }
+      .now-feed.item-right > *:nth-child(2n+1) .feed-icon, .now-feed.item-left > *:nth-child(2n) .feed-icon {
+        float: left;
+        margin-left: -95px; } }
+
+@media screen and (min-width: 992px) {
+  .now-feed > * {
+    width: 46%;
+    margin-left: 4%; }
+  .now-feed.item-right > *:nth-child(2n+1), .now-feed.item-left > *:nth-child(2n) {
+    margin-right: 4%; } }
+
+@media screen and (min-width: 1280px) {
+  .now-feed > * {
+    width: 40%;
+    margin-left: 10%; }
+  .now-feed.item-right > *:nth-child(2n+1), .now-feed.item-left > *:nth-child(2n) {
+    margin-right: 10%; } }
+
 .footer-actions {
   background: transparent;
   background-color: #eeeeee;

@@ -7,6 +7,10 @@ $font-size-h4:            20px; // ~18px
 $font-size-h5:            16px;
 $font-size-h6:            16px; // ~12px
 */
+.navbar-brand.pattern-text {
+  padding-left: 0px;
+  padding-top: 15px; }
+
 /* -------------------------------------------------------------------------
 
  Style Guide Boilerplate Bootstrap Edition v2.0.1
