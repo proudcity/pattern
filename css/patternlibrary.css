@@ -9,7 +9,8 @@ $font-size-h6:            16px; // ~12px
 */
 .navbar-brand.pattern-text {
   padding-left: 0px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  padding-bottom: 17px; }
 
 /* -------------------------------------------------------------------------
 
@@ -27,7 +28,8 @@ body {
   padding-top: 50px; }
 
 .navbar.navbar-patternlibrary {
-  border-bottom-color: #555555; }
+  border-bottom-color: #555555;
+  min-height: 54px; }
 
 .row-offcanvas {
   position: relative;
