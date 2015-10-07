@@ -5025,6 +5025,23 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+.animation-wrap {
+  position: relative;
+  overflow: hidden; }
+
+[ui-view] {
+  z-index: 2;
+  min-height: 200px; }
+
+.transform.ng-enter, .transform.ng-enter-active, .transform.ng-leave, .transform.ng-leave-active, .slidedown.ng-enter, .slidedown.ng-enter-active, .slidedown.ng-leave, .slidedown.ng-leave-active {
+  overflow: hidden; }
+.transform.ng-enter, .slidedown.ng-enter {
+  z-index: 2; }
+.transform.ng-leave, .slidedown.ng-leave {
+  z-index: 1; }
+
 @media screen and (max-width: 767px) {
   .transform.ng-enter, .transform.ng-leave, .transform.ng-hide-add, .transform.ng-hide-remove, .slidedown.ng-enter, .slidedown.ng-leave, .slidedown.ng-hide-add, .slidedown.ng-hide-remove {
     -webkit-transition: all 0.5s ease-in-out;
@@ -6570,6 +6587,9 @@ footer.page-footer {
     color: grey; }
   .accordion .panel-heading a.collapsed:after {
     content: "\f0da"; }
+
+.nav-tabs {
+  margin-bottom: 6px; }
 
 .jumbotron {
   background-size: cover;
