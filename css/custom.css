@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,900,700,300");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6672,10 +6673,10 @@ footer.page-footer {
   .jumbotron h1, .jumbotron h2 {
     font-size: 60px; }
   .jumbotron.jumbotron-inverse {
-    background-color: #004993;
-    color: #FFF; }
+    background-color: #345c7a;
+    color: #FAFAFA; }
     .jumbotron.jumbotron-inverse h1 {
-      color: inherit; }
+      color: #FFF; }
   .jumbotron.jumbotron-image {
     background-color: transparent; }
   .jumbotron .jumbotron-bg {
