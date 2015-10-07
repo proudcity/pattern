@@ -1,708 +1,254 @@
 
-<nav class="navbar navbar-proud" id="proud-navbar">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div id="navbar-proudcity" class="dropdown pull-left">
-    <a class="navbar-brand dropdown-toggle" href="" data-toggle="dropdown"><img class="logo" src="http://www.getproudcity.com/images/logo.png" alt="Home" style="height: 30px;"></a>
-    <ul class="dropdown-menu" aria-labelledby="proudcity">
-      <li><a href="#">ProudCity</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Community</a></li>
-      <li><a href="#">Support</a></li>
-      <li><a href="#">Webinars</a></li>
-    </ul>
+<!-- MetisMenu CSS -->
+<link href="http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+<!-- Timeline CSS -->
+<link href="http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/dist/css/timeline.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css" rel="stylesheet">
+
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div id="navbar-proudcity" class="dropdown pull-left">
+      <a class="navbar-brand dropdown-toggle" href="" data-toggle="dropdown">
+        <img class="logo" src="http://www.getproudcity.com/images/logo.png" alt="Home" style="height: 30px;">
+        <i class="fa fa-fw fa-caret-down"></i>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="proudcity">
+        <li><a href="#">ProudCity</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Webinars</a></li>
+      </ul>
+    </div>
   </div>
+  <!-- /.navbar-header -->
 
-  
+  <ul class="nav navbar-nav">
+    <li class="home first last">
+      <a href="#" title="Home"><i class="fa fa-fw fa-home"></i> Home</a>
+    </li>
+    <li class="first leaf menu-link-dashboard">
+      <a href="#" title=""><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+    </li>
+    <li class="leaf menu-link-categories dropdown">
+      <a href="#" id="navbar-new" title="" class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-fw fa-plus-circle"></i> New <i class="fa fa-fw fa-caret-down"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="navbar-new">
+        <li><a href="/node/add/article"><i class="fa fa-fw fa-newspaper-o" style="color:#8AB734"></i> Article</a></li>
+        <li><a href="/node/add/article"><i class="fa fa-fw fa-file" style="color:rgb(188, 133, 230)"></i> Page</a></li>
+        <li><a href="/node/add/article"><i class="fa fa-fw fa-question-circle" style="color:rgb(178, 118, 54)"></i> FAQ</a></li>
+      </ul>
+    </li>
 
-  <div class="navbar-header pull-right">
-    <button class="navbar-toggle" data-target="#proud-navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><i class="fa-bars"></i></button>
+    <!--
+    <li class="proud-menu-tab">
+      <a href="#"><i class="fa fa-fw fa-file-o"></i> View</a>
+    </li>
+    <li class="active proud-menu-tab">
+      <a class="active" href="#"><i class="fa fa-fw fa-pencil"></i> Edit</a>
+    </li>
+    <li class="proud-menu-tab">
+      <a href="/node/56" title=""><i class="fa fa-fw fa-columns"></i> Panels</a>
+    </li>
+    -->
+    
+  </ul>
 
-    <div class="pull-right">
-      <ul class="nav navbar-nav">
-        <li class="dropdown open">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i></a>
-          <ul class="dropdown-menu dropdown-alerts">
-            <li>
-              <a href="#">
-              <div>
-                <i class="fa fa-comment fa-fw"></i> New Comment <span class="pull-right text-muted small">4 minutes ago</span>
-              </div></a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="#">
-              <div>
-                <i class="fa fa-twitter fa-fw"></i> 3 New Followers <span class="pull-right text-muted small">12 minutes ago</span>
-              </div></a>
-            </li>
-            <li>
-              <a class="text-center" href="#"><strong>See All Alerts</strong> <i class="fa fa-angle-right"></i></a>
-            </li>
-          </ul><!-- /.dropdown-alerts -->
+  <ul class="nav navbar-nav navbar-right">
+
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <img alt="ckchapman's picture" src="http://www.gravatar.com/avatar/09fbd5f5349f3f7c1e4610b91dd07008.jpg?d=identicon&amp;s=30&amp;r=G" title="ckchapman's picture" style="height:30px;margin:-5px 0">
+        <!--<i class="fa fa-fw fa-user"></i>-->  <i class="fa fa-fw fa-caret-down"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-user">
+        <li><a href="#"><i class="fa fa-fw fa-user"></i> My account</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-usd"></i> Billing</a></li>
+        <li class="divider"></li>
+        <li><a href="login.html"><i class="fa fa-fw fa-sign-out"></i> Logout</a>
         </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" id="proud-city-user" href="#">
-            <img alt="ckchapman's picture" src="http://www.gravatar.com/avatar/09fbd5f5349f3f7c1e4610b91dd07008.jpg?d=identicon&amp;s=30&amp;r=G" title="ckchapman's picture">&nbsp;        
-            Account
-          </a>
-          <ul class="menu dropdown-menu nav">
-            <li class="first leaf menu-link-my-account">
-              <a href="#">My account</a>
-            </li>
-            <li class="last leaf menu-link-log-out">
-              <a href="#">Log out</a>
-            </li>
+      </ul>
+      <!-- /.dropdown-user -->
+    </li>
+    <!-- /.dropdown -->
+  </ul>
+  <!-- /.navbar-top-links -->
+
+  <div class="navbar-inverse sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+      <ul class="nav in" id="side-menu">
+        <li><a href="#"><i class="fa fa-fw fa-bars"></i> Menus</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-search"></i> Content</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-question-circle"></i> Answers</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-users"></i> Users</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-line-chart"></i> Analytics</a></li>
+        <li><a href="#"><i class="fa fa-fw fa-paint-brush"></i> Appearance</a></li>
+        
+        <li>
+          <a data-toggle="collapse" href="#setup-sub" class="collapsed"><i class="fa fa-fw fa-gears"></i> Setup <i class="fa fa-angle-down pull-right"></i></a>
+          <ul id="setup-sub" class="nav nav-second-level collapse">
+            <li><a href="#"><!--<i class="fa fa-fw fa-globe"></i> -->Social</a></li>
+            <li><a href="#"><!--<i class="fa fa-fw fa-university"></i> -->Agencies</a></li>
+            <li><a href="#"><!--<i class="fa fa-fw fa-credit-card"></i> -->Payments</a></li>
+            <li><a href="#"><!--<i class="fa fa-fw fa-wrench"></i> -->311</a></li>
+            <li><a href="#"><!--<i class="fa fa-fw fa-map"></i> -->Map</a></li>
+            <li><a href="#"><!--<i class="fa fa-fw fa-search"></i> !-->Apps</a></li>
           </ul>
         </li>
       </ul>
     </div>
-  </div><!-- /.navbar-header -->
-
-  <div class="collapse navbar-collapse" id="proud-navbar-collapse">
-    <div class="navigation" id="proud-menu">
-      <ul class="nav navbar-nav">
-        <li class="home first last">
-          <a href="#" title="Home"><i class="fa fa-home"></i> Home</a>
-        </li>
-        <li class="first leaf menu-link-dashboard">
-          <a href="#" title=""><i class="fa fa-dashboard"></i> Dashboard</a>
-        </li>
-        <li class="leaf menu-link-categories dropdown">
-          <a href="#" id="navbar-new" title="" class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-plus"></i> New</a>
-          <ul class="dropdown-menu" aria-labelledby="navbar-new">
-            <li><a href="/node/add/article"><i class="fa fa-newspaper-o" style="color:#8AB734"></i> Article</a></li>
-            <li><a href="/node/add/article"><i class="fa fa-file" style="color:rgb(188, 133, 230)"></i> Page</a></li>
-            <li><a href="/node/add/article"><i class="fa fa-question-circle" style="color:rgb(178, 118, 54)"></i> FAQ</a></li>
-          </ul>
-        </li>
-        <li class="leaf menu-link-content">
-          <a href="#" title=""><i class="fa fa-home"></i> Content</a>
-        </li>
-        <!--<li class="last leaf menu-link-styleguide">
-          <a href="/node/56" title=""><i class="fa fa-paint-brush"></i> Styleguide</a>
-        </li>-->
-        <li class="proud-menu-tab">
-          <a href="#"><i class="fa fa-file-o"></i> View</a>
-        </li>
-        <li class="active proud-menu-tab">
-          <a class="active" href="#"><i class="fa fa-pencil"></i> Edit</a>
-        </li>
-      </ul>
-    </div><!-- /#secondary-menu -->
-  </div><!-- /.navbar-collapse -->
-  
+    <!-- /.sidebar-collapse -->
+  </div>
+  <!-- /.navbar-static-side -->
 </nav>
 
-
-<div class="breadcrumb-wrapper">
-<div class="container">
-  <ul class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/node/55">Dashboard</a></li><li><strong>ckchapman</strong></li></ul>
-</div>
-</div>
+<div id="page-wrapper">
 
 
 
 
 
-<div class="container">
-
-
-<div class="row spacing"><div class="col-xs-12">
-
-<div class="card-deck-wrapper"><div class="card-deck">
-
-  <div class="card card-block card-inverse card-primary">
-    <h4 class="card-title"><a href="#">Content</a> <small> | <a href="#">Main menu &raquo;</a></small></h4>
-    <a href="#" class="btn btn-default btn-block" id="dropdownCreateContent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i> Create new <span class="caret"></span></a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownCreateContent">
-      <li><a href="/node/add/article"><i class="fa fa-newspaper-o" style="color:#8AB734"></i> Article</a></li>
-      <li><a href="/node/add/article"><i class="fa fa-file" style="color:rgb(188, 133, 230)"></i> Page</a></li>
-      <li><a href="/node/add/article"><i class="fa fa-question-circle" style="color:rgb(178, 118, 54)"></i> FAQ</a></li>
-    </ul>
-  </div>
-
-  <div class="card card-block card-inverse card-primary">
-    <h4 class="card-title">People <small>| <a href="#">Manage &raquo;</a></small></h4>
-    <a href="#" class="btn btn-default btn-block"><i class="fa fa-user"></i> Add &raquo;</a>
-  </div>
-
-  <div class="card card-block card-inverse card-primary">
-    <h4 class="card-title">Agencies <small> | <a href="#">Create &raquo;</a></small></h4>
-    <a href="#" class="btn btn-default btn-block" id="dropdownManageAgency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-plus-circle"></i> Select <span class="caret"></span></a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownManageAgency">
-      <li><a href="#">Mayor</a></li>
-      <li><a href="#">City Council</a></li>
-      <li><a href="#">Police</a></li>
-      <li><a href="#">Fire</a></li>
-    </ul>
-  </div>
-
-  <div class="card card-block card-inverse card-primary">
-    <h4 class="card-title">Settings</h4>
-    <a href="#" class="btn btn-default btn-block" id="dropdownSettings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-gear"></i> Configure <span class="caret"></span></a>
-    <ul class="dropdown-menu" aria-labelledby="dropdownSettings">
-      <li><a href="#">Settings</a></li>
-      <li><a href="#">Users</a></li>
-      <li><a href="#">Appearance</a></li>
-      <li><a href="#">Agencies &amp; Social</a></li>
-      <li><a href="#">Payments</a></li>
-      <li><a href="#">Open 311</a></li>
-      <li><a href="#">Map</a></li>
-      <li><a href="#">Apps</a></li>
-      <li><a href="#">Billing</a></li>
-      <li><a href="#">Configure</a></li>
-    </ul>
-  </div>
-
-</div></div>
-
-</div></div> <!-- card deck row -->
-
-
-
-
-<div class="row">
-<div class="col-md-6">
-  <div class="card card-block">
-    <h3>Questions</h3>
-    <table class="table table-striped table-bordered table-condensed">
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Name</th>
-          <th>Question</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>4 hours ago</td>
-          <td>Michael Johnson</td>
-          <td><a href="#">How do I contact my school board?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Ben Blacksmith</td>
-          <td><a href="#">How do I get a construction inspection?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-        <tr>
-          <td>4 hours ago</td>
-          <td>Michael Johnson</td>
-          <td><a href="#">How do I contact my school board?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-        <tr>
-          <td>4 hours ago</td>
-          <td>Michael Johnson</td>
-          <td><a href="#">How do I contact my school board?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Ben Blacksmith</td>
-          <td><a href="#">How do I get a construction inspection?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-        <tr>
-          <td>4 hours ago</td>
-          <td>Michael Johnson</td>
-          <td><a href="#">How do I contact my school board?</a></td>
-        </tr>
-        <tr>
-          <td>1 day ago</td>
-          <td>Lucille Blacksmith</td>
-          <td><a href="#">What time do parks close?</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-<div class="col-md-6">
-  <div class="card card-block">
-    <h3>Requests</h3>
-    <img src="http://placehold.it/600x500/?text=Map" alt="">
-  </div>
-</div>
-
-
-
-
-
-<div class="row spacing">
-  <div class="col-xs-12">
-
-<div class="card card-full"><div class="card-block">
-    <script>
-(function(w,d,s,g,js,fs){
-  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(f){this.q.push(f);}};
-  js=d.createElement(s);fs=d.getElementsByTagName(s)[0];
-  js.src='https://apis.google.com/js/platform.js';
-  fs.parentNode.insertBefore(js,fs);js.onload=function(){g.load('analytics');};
-}(window,document,'script'));
-</script>
-
-<div id="embed-api-auth-container">
-  <div style="display: none;">
-    <div class="gapi-analytics-auth-styles-signinbutton gapi-analytics-auth-styles-signinbutton:hover" data-gapiattached="true" title="Access Google Analytics">
-      <span class="gapi-analytics-auth-styles-signinbutton-image"></span><span class="gapi-analytics-auth-styles-signinbutton-buttonText">Access Google Analytics</span>
+<div class="row"><div class="col-xs-12">
+  <div class="card card-full">
+    <div class="card-block">
+      <a class="btn btn-primary btn-xs pull-right">Launch setup wizard &raquo;</a>
+      <h4 class="card-title">Setup <small> | <a href="#" style="color:#fff;">Step 5: Social networks</a></small></h4>
+      <div class="progress" style="margin-bottom:0;">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
     </div>
   </div>
-  <div style="display: none;"></div>
-</div>
+</div></div>
 
-<div id="view-selector-container" style="display: none;"></div>
-
-<div class="row title-container">
-  <div class="col-xs-12">
-    <div id="active-users-container" class="pull-right well"></div>
-    <h2 id="view-name" style="display:none;"></h2>
-    <h3>Analytics</h3>
-  </div>
-</div>
 
 <div class="row">
-  <div class="col-md-6">
-    <div id="chart-1-container" class="google-embed-chart"></div>
-    <div id="legend-1-container" class="google-embed-legend"></div>
+  <div class="col-lg-8">
+
+    <img src="images/analytics.png"/>
+    
+    <div class="card card-block">
+      <h3>Questions</h3>
+      <table class="table table-striped table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Name</th>
+            <th>Question</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4 hours ago</td>
+            <td>Michael Johnson</td>
+            <td><a href="#">How do I contact my school board?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Ben Blacksmith</td>
+            <td><a href="#">How do I get a construction inspection?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+          <tr>
+            <td>4 hours ago</td>
+            <td>Michael Johnson</td>
+            <td><a href="#">How do I contact my school board?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+          <tr>
+            <td>4 hours ago</td>
+            <td>Michael Johnson</td>
+            <td><a href="#">How do I contact my school board?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Ben Blacksmith</td>
+            <td><a href="#">How do I get a construction inspection?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+          <tr>
+            <td>4 hours ago</td>
+            <td>Michael Johnson</td>
+            <td><a href="#">How do I contact my school board?</a></td>
+          </tr>
+          <tr>
+            <td>1 day ago</td>
+            <td>Lucille Blacksmith</td>
+            <td><a href="#">What time do parks close?</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- card -->
+
+    <div class="card card-block">
+      <h3>Requests</h3>
+      <img src="http://placehold.it/1200x500/?text=Map" alt="">
+    </div>
+
   </div>
-  <div class="col-md-6">
-    <div id="chart-2-container" class="google-embed-chart"></div>
-    <div id="legend-2-container" class="google-embed-legend"></div>
+
+  <div class="col-lg-4">
+    <div class="card card-block">
+      <h3>Did you know?</h3>
+      <img src="http://placehold.it/1200x500/?text=Graphic or video" alt="">
+    </div>
+
+    <div class="card card-block">
+      <h3>From the ProudBlog</h3>
+      <ul class="title-list list-unstyled">
+        <li>
+          <h5 class="field-content"><a href="">Community Wide Cleanup Sets New Volunteer Record</a></h5>
+          <p class="text-muted">May 6 2015</p>
+        </li>
+        <li>
+          <h5 class="field-content"><a href="">Community Wide Cleanup Sets New Volunteer Record</a></h5>
+          <p class="text-muted">May 6 2015</p>
+        </li>
+        <li>
+          <h5 class="field-content"><a href="">Community Wide Cleanup Sets New Volunteer Record</a></h5>
+          <p class="text-muted">May 6 2015</p>
+        </li>
+        <li>
+          <h5 class="field-content"><a href="">Community Wide Cleanup Sets New Volunteer Record</a></h5>
+          <p class="text-muted">May 6 2015</p>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </div>
-<div class="row spacing">
-  <div class="col-md-12">
-    <a href="#" class="btn btn-primary"><i class="fa fa-line-chart"></i> Detailed analytics</a>
-  </div>
+
 </div>
-
-<style>
-.title-container {
-  margin-top: 2rem;
-}
-.google-embed-chart {
-  min-height: 200px;
-  margin-top: 1em;
-}
-#view-selector-container {
-  /*display: none;*/
-}
-#view-selector-container .ViewSelector2-item {
-  width: 28%;
-  margin-right: 3%;
-  float: left;
-}
-#view-selector-container .ViewSelector2-item label {
-  display: block;
-}
-
-.google-embed-legend {
-  text-align: center;
-}
-
-.google-embed-legend li {
-  list-style: none;
-  float: left;
-  margin-right: 10px;
-}
-
-.google-embed-legend i {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  float: left;
-}
-</style>
-
-
-
-<!-- This demo uses the Chart.js graphing library and Moment.js to do date
-     formatting and manipulation. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
-
-<!-- Include the ViewSelector2 component script. -->
-<script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/view-selector2.js"></script>
-
-<!-- Include the DateRangeSelector component script. -->
-<script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/date-range-selector.js"></script>
-
-<!-- Include the ActiveUsers component script. -->
-<script src="https://ga-dev-tools.appspot.com/public/javascript/embed-api/components/active-users.js"></script>
-
-
-
-
-<script>
-
-// == NOTE ==
-// This code uses ES6 promises. If you want to use this code in a browser
-// that doesn't supporting promises natively, you'll have to include a polyfill.
-
-gapi.analytics.ready(function() {
-
-  /**
-   * Authorize the user immediately if the user has already granted access.
-   * If no access has been created, render an authorize button inside the
-   * element with the ID "embed-api-auth-container".
-   */
-  gapi.analytics.auth.authorize({
-    container: 'embed-api-auth-container',
-    clientid: '803709284916-uov025nr8dr1v21dns6j108f9e5mcjp7.apps.googleusercontent.com'
-  });
-
-
-  /**
-   * Create a new ActiveUsers instance to be rendered inside of an
-   * element with the id "active-users-container" and poll for changes every
-   * five seconds.
-   */
-  var activeUsers = new gapi.analytics.ext.ActiveUsers({
-    container: 'active-users-container',
-    pollingInterval: 5
-  });
-
-
-  /**
-   * Add CSS animation to visually show the when users come and go.
-   */
-  activeUsers.once('success', function() {
-    var element = this.container.firstChild;
-    var timeout;
-
-    this.on('change', function(data) {
-      var element = this.container.firstChild;
-      var animationClass = data.delta > 0 ? 'is-increasing' : 'is-decreasing';
-      element.className += (' ' + animationClass);
-
-      clearTimeout(timeout);
-      timeout = setTimeout(function() {
-        element.className =
-            element.className.replace(/ is-(increasing|decreasing)/g, '');
-      }, 3000);
-    });
-  });
-
-
-  /**
-   * Create a new ViewSelector2 instance to be rendered inside of an
-   * element with the id "view-selector-container".
-   */
-  var viewSelector = new gapi.analytics.ext.ViewSelector2({
-    container: 'view-selector-container',
-  })
-  .execute();
-
-
-
-
-  /**
-   * Update the activeUsers component, the Chartjs charts, and the dashboard
-   * title whenever the user changes the view.
-   */
-  viewSelector.on('viewChange', function(data) {
-    //data = {view: {name: 'Albatross Digital'}, property: {'Albatross Digital'}, 'ids': 'ga:57204547'}; // @todo: update
-    var title = document.getElementById('view-name');
-    title.innerHTML = data.property.name;// + ' (' + data.view.name + ')';
-
-    // Start tracking active users for this view.
-    activeUsers.set(data).execute();
-    console.log(data.ids);
-
-    // Render all the of charts for this view.
-    renderWeekOverWeekChart(data.ids);
-    renderYearOverYearChart(data.ids);
-    renderTopBrowsersChart(data.ids);
-    //renderTopCountriesChart(data.ids);
-  });
-
-
-  /**
-   * Draw the a chart.js line chart with data from the specified view that
-   * overlays session data for the current week over session data for the
-   * previous week.
-   */
-  function renderWeekOverWeekChart(ids) {
-
-    // Adjust `now` to experiment with different days, for testing only...
-    var now = moment(); // .subtract(3, 'day');
-
-    var thisWeek = query({
-      'ids': ids,
-      'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:sessions',
-      'start-date': moment(now).subtract(1, 'day').day(0).format('YYYY-MM-DD'),
-      'end-date': moment(now).format('YYYY-MM-DD')
-    });
-
-    var lastWeek = query({
-      'ids': ids,
-      'dimensions': 'ga:date,ga:nthDay',
-      'metrics': 'ga:sessions',
-      'start-date': moment(now).subtract(1, 'day').day(0).subtract(1, 'week')
-          .format('YYYY-MM-DD'),
-      'end-date': moment(now).subtract(1, 'day').day(6).subtract(1, 'week')
-          .format('YYYY-MM-DD')
-    });
-
-    Promise.all([thisWeek, lastWeek]).then(function(results) {
-
-      var data1 = results[0].rows.map(function(row) { return +row[2]; });
-      var data2 = results[1].rows.map(function(row) { return +row[2]; });
-      var labels = results[1].rows.map(function(row) { return +row[0]; });
-
-      labels = labels.map(function(label) {
-        return moment(label, 'YYYYMMDD').format('ddd');
-      });
-
-      var data = {
-        labels : labels,
-        datasets : [
-          {
-            label: 'Last Week',
-            fillColor : 'rgba(220,220,220,0.5)',
-            strokeColor : 'rgba(220,220,220,1)',
-            pointColor : 'rgba(220,220,220,1)',
-            pointStrokeColor : '#fff',
-            data : data2
-          },
-          {
-            label: 'This Week',
-            fillColor : 'rgba(151,187,205,0.5)',
-            strokeColor : 'rgba(151,187,205,1)',
-            pointColor : 'rgba(151,187,205,1)',
-            pointStrokeColor : '#fff',
-            data : data1
-          }
-        ]
-      };
-
-      new Chart(makeCanvas('chart-1-container')).Line(data);
-      generateLegend('legend-1-container', data.datasets);
-    });
-  }
-
-
-  /**
-   * Draw the a chart.js bar chart with data from the specified view that
-   * overlays session data for the current year over session data for the
-   * previous year, grouped by month.
-   */
-  function renderYearOverYearChart(ids) {
-
-    // Adjust `now` to experiment with different days, for testing only...
-    var now = moment(); // .subtract(3, 'day');
-
-    var thisYear = query({
-      'ids': ids,
-      'dimensions': 'ga:month,ga:nthMonth',
-      'metrics': 'ga:users',
-      'start-date': moment(now).date(1).month(0).format('YYYY-MM-DD'),
-      'end-date': moment(now).format('YYYY-MM-DD')
-    });
-
-    var lastYear = query({
-      'ids': ids,
-      'dimensions': 'ga:month,ga:nthMonth',
-      'metrics': 'ga:users',
-      'start-date': moment(now).subtract(1, 'year').date(1).month(0)
-          .format('YYYY-MM-DD'),
-      'end-date': moment(now).date(1).month(0).subtract(1, 'day')
-          .format('YYYY-MM-DD')
-    });
-
-    Promise.all([thisYear, lastYear]).then(function(results) {
-      var data1 = results[0].rows.map(function(row) { return +row[2]; });
-      var data2 = results[1].rows.map(function(row) { return +row[2]; });
-      var labels = ['Jan','Feb','Mar','Apr','May','Jun',
-                    'Jul','Aug','Sep','Oct','Nov','Dec'];
-
-      // Ensure the data arrays are at least as long as the labels array.
-      // Chart.js bar charts don't (yet) accept sparse datasets.
-      for (var i = 0, len = labels.length; i < len; i++) {
-        if (data1[i] === undefined) data1[i] = null;
-        if (data2[i] === undefined) data2[i] = null;
-      }
-
-      var data = {
-        labels : labels,
-        datasets : [
-          {
-            label: 'Last Year',
-            fillColor : 'rgba(220,220,220,0.5)',
-            strokeColor : 'rgba(220,220,220,1)',
-            data : data2
-          },
-          {
-            label: 'This Year',
-            fillColor : 'rgba(151,187,205,0.5)',
-            strokeColor : 'rgba(151,187,205,1)',
-            data : data1
-          }
-        ]
-      };
-
-      new Chart(makeCanvas('chart-2-container')).Bar(data);
-      generateLegend('legend-2-container', data.datasets);
-    })
-    .catch(function(err) {
-      console.error(err.stack);
-    });
-  }
-
-
-  /**
-   * Draw the a chart.js doughnut chart with data from the specified view that
-   * show the top 5 browsers over the past seven days.
-   */
-  function renderTopBrowsersChart(ids) {
-
-   /* query({
-      'ids': ids,
-      'dimensions': 'ga:browser',
-      'metrics': 'ga:pageviews',
-      'sort': '-ga:pageviews',
-      'max-results': 5
-    })
-    .then(function(response) {
-
-      var data = [];
-      var colors = ['#4D5360','#949FB1','#D4CCC5','#E2EAE9','#F7464A'];
-
-      response.rows.forEach(function(row, i) {
-        data.push({ value: +row[1], color: colors[i], label: row[0] });
-      });
-
-      new Chart(makeCanvas('chart-3-container')).Doughnut(data);
-      generateLegend('legend-3-container', data);
-    });*/
-  }
-
-
-  /**
-   * Draw the a chart.js doughnut chart with data from the specified view that
-   * compares sessions from mobile, desktop, and tablet over the past seven
-   * days.
-   */
-  /*function renderTopCountriesChart(ids) {
-    query({
-      'ids': ids,
-      'dimensions': 'ga:country',
-      'metrics': 'ga:sessions',
-      'sort': '-ga:sessions',
-      'max-results': 5
-    })
-    .then(function(response) {
-
-      var data = [];
-      var colors = ['#4D5360','#949FB1','#D4CCC5','#E2EAE9','#F7464A'];
-
-      response.rows.forEach(function(row, i) {
-        data.push({
-          label: row[0],
-          value: +row[1],
-          color: colors[i]
-        });
-      });
-
-      new Chart(makeCanvas('chart-4-container')).Doughnut(data);
-      generateLegend('legend-4-container', data);
-    });
-  }*/
-
-
-  /**
-   * Extend the Embed APIs `gapi.analytics.report.Data` component to
-   * return a promise the is fulfilled with the value returned by the API.
-   * @param {Object} params The request parameters.
-   * @return {Promise} A promise.
-   */
-  function query(params) {
-    return new Promise(function(resolve, reject) {
-      var data = new gapi.analytics.report.Data({query: params});
-      data.once('success', function(response) { resolve(response); })
-          .once('error', function(response) { reject(response); })
-          .execute();
-    });
-  }
-
-
-  /**
-   * Create a new canvas inside the specified element. Set it to be the width
-   * and height of its container.
-   * @param {string} id The id attribute of the element to host the canvas.
-   * @return {RenderingContext} The 2D canvas context.
-   */
-  function makeCanvas(id) {
-    var container = document.getElementById(id);
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
-
-    container.innerHTML = '';
-    canvas.width = container.offsetWidth;
-    canvas.height = container.offsetHeight;
-    container.appendChild(canvas);
-
-    return ctx;
-  }
-
-
-  /**
-   * Create a visual legend inside the specified element based off of a
-   * Chart.js dataset.
-   * @param {string} id The id attribute of the element to host the legend.
-   * @param {Array.<Object>} items A list of labels and colors for the legend.
-   */
-  function generateLegend(id, items) {
-    var legend = document.getElementById(id);
-    legend.innerHTML = items.map(function(item) {
-      var color = item.color || item.fillColor;
-      var label = item.label;
-      return '<li><i style="background:' + color + '"></i>' + label + '</li>';
-    }).join('');
-  }
-
-
-  // Set some global Chart.js defaults.
-  Chart.defaults.global.animationSteps = 60;
-  Chart.defaults.global.animationEasing = 'easeInOutQuart';
-  Chart.defaults.global.responsive = true;
-  Chart.defaults.global.maintainAspectRatio = false;
-
-});
-</script>  </div>
-
-
-  </div>
-</div></div> <!-- google analytics -->
-
-
-
-
-
-
-
-</div> <!-- /.container -->
-
