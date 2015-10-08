@@ -6195,7 +6195,7 @@ img {
 .menu-option-footer {
   max-width: 100%;
   overflow-x: hidden; }
-  .menu-option-footer.navbar-force-static .navbar-external {
+  .menu-option-footer.navbar-force-static .navbar-external, .menu-option-footer.navbar-force-static .navbar-external #main-menu, .menu-option-footer.navbar-force-static .navbar-external .menu-box {
     position: static !important; }
   .menu-option-footer.topnav .navbar-fixed-top {
     display: none; }
