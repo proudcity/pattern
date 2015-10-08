@@ -109,6 +109,7 @@ else {
       $pageReq = $_GET['page'];
       if(strpos($pageReq, 'admin') === false) {
         showMarkupItem('patterns', 'navbar');
+        showMarkupItem('patterns', 'navbar-header');
       }
       
       showMarkupPage('layouts', $pageReq);

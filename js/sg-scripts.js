@@ -1,5 +1,80 @@
-
 $(function() {
+
+  // Function normalizes height
+  // looks for [data-equalizer], and equals 
+  // height for all [data-equalize-height] children
+  // 
+  // var mq (optional)
+  //     mq = a media query, test for true 
+  //     mq = null, then run resize for all windows
+  $.fn.equalizeHeight = (function(mq) {
+
+      var self      = this,
+          $children = [],
+          mq = mq ? mq : false;
+
+      self.init = function() {
+          $children = $(this).find('[data-equalize-height]');
+          if($children.length) {
+              self.equalize();
+              self.setWatch();
+          }
+      }
+
+      self.reset = function() {
+          $.each($children, function (index, element) {
+              $(element).css("height", "");
+          });
+      }
+
+      self.equalize = function() {
+          var largestHeight = 0;
+          self.reset();
+          if(  !mq || window.matchMedia(mq).matches ) {
+              $.each($children, function (index, element) {
+                  var thisHeight = $(element).height();
+                  if (thisHeight > largestHeight) {
+                      largestHeight = thisHeight;
+                  }
+              });
+          }
+          $.each($children, function(index, element) {
+              $(element).height(largestHeight + "px");
+          });
+      }
+
+      // Description:
+      //    Executes a function a max of once every n milliseconds
+      self.throttle = function (func, delay) {
+          var timer = null;
+
+          return function () {
+              var context = this, args = arguments;
+
+              if (timer == null) {
+                timer = setTimeout(function () {
+                  func.apply(context, args);
+                  timer = null;
+                }, delay);
+              }
+          };
+      }
+
+      self.setWatch = function() {
+          // Set watch
+          $(window).on('resize.equalizer', self.throttle(function () {
+              self.equalize();
+          }, 50));
+      }
+
+      return self.init();
+  });
+
+  $( document ).ready(function() {
+    // Generic resize call
+    $('[data-equalizer]').equalizeHeight();
+  });
+
   var menuOpen    = false,
       searchOpen  = false,
       answersOpen = false,

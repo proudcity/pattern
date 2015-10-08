@@ -6208,6 +6208,10 @@ img {
 
 .navbar-external #logo-menu {
   display: none; }
+  .navbar-external #logo-menu .nav-logo i {
+    font-size: 1.6em; }
+  .navbar-external #logo-menu .nav-text a {
+    padding-left: 0; }
 .navbar-external .navbar-btn {
   padding-top: 0;
   padding-bottom: 0;
@@ -6309,10 +6313,12 @@ img {
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
-.navbar-external .navbar-header img {
-  display: inline-block;
-  max-width: 300px;
-  height: auto; }
+.navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h3 {
+  margin: 12px 0; }
+  .navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h2 a, .navbar-external ~ .navbar-header-region h3, .navbar-external ~ .navbar-header-region h3 a {
+    color: #9d9d9d; }
+  .navbar-external ~ .navbar-header-region h2 i, .navbar-external ~ .navbar-header-region h3 i {
+    margin-right: 0.25em; }
 
 @media screen and (max-width: 767px) {
   .navbar-external {
@@ -6332,9 +6338,10 @@ img {
       background: #000000;
       margin-bottom: -54px;
       margin-left: 0;
-      margin-right: 0; }
+      margin-right: 0;
+      padding-top: 5%; }
     .menu-nav-open .navbar-external #main-menu {
-      height: 105%;
+      height: 101%;
       margin-bottom: 0; }
     .navbar-external .menu-box {
       background: #000000;
@@ -6344,15 +6351,6 @@ img {
     .navbar-external .navbar-fixed-bottom .navbar-nav {
       padding: 54px 20px; } }
 
-@media screen and (max-width: 991px) {
-  .navbar-external .navbar-btn {
-    padding-left: 0;
-    padding-right: 0;
-    font-size: 18px; }
-    .navbar-external .navbar-btn, .navbar-external .navbar-btn i {
-      overflow: hidden;
-      width: 47px; } }
-
 @media screen and (min-width: 768px) {
   .navbar-external {
     z-index: 1051; }
@@ -6361,12 +6359,23 @@ img {
       min-width: 125px; }
       .navbar-external .menu-box .btn-toolbar.pull-right {
         margin-left: 0; }
-    .navbar-external .navbar-header {
+    .navbar-external ~ .navbar-header-region .navbar-header {
       float: none; }
+    .navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h3 {
+      margin: 18px 0; }
     .navbar-external .menu-button {
       display: none; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1279px) {
+  .navbar-external .navbar-btn {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px; }
+    .navbar-external .navbar-btn, .navbar-external .navbar-btn i {
+      overflow: hidden;
+      width: 47px; } }
+
+@media screen and (min-width: 992px) {
   .menu-option-footer body {
     padding-top: 54px;
     padding-bottom: 0; }
@@ -6378,14 +6387,14 @@ img {
     .navbar-external #main-menu {
       float: right;
       margin-right: 10px; }
-    .navbar-external + .navbar {
-      display: none; }
     .navbar-external .navbar-btn {
       margin-top: 4px; }
       .navbar-external .navbar-btn i {
         margin-right: 0.25em; }
       .navbar-external .navbar-btn.search-btn i {
-        margin-right: 0; } }
+        margin-right: 0; }
+    .navbar-external ~ .navbar-header-region {
+      display: none; } }
 
 .btn-block {
   display: block; }
@@ -6606,7 +6615,8 @@ img {
     padding: 6px 12px 6px 0; }
 
 footer.page-footer {
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 20px 0; }
   footer.page-footer, footer.page-footer a, footer.page-footer h2, footer.page-footer h3, footer.page-footer h4, footer.page-footer h5, footer.page-footer h6 {
     color: #777777; }
   footer.page-footer h5 {
@@ -6775,21 +6785,21 @@ footer.page-footer {
   *.margin-xs-none {
     margin-bottom: 0;
     margin-top: 0; }
-  *.margin-xs-top-none {
+  *.margin-top-xs-none {
     margin-top: 0; }
-  *.margin-xs-top-large {
+  *.margin-top-xs-large {
     margin-top: 40.5px; }
-  *.margin-xs-top-larger {
+  *.margin-top-xs-larger {
     margin-top: 54px; }
-  *.margin-xs-top-huge {
+  *.margin-top-xs-huge {
     margin-top: 81px; }
-  *.margin-xs-bottom-none {
+  *.margin-bottom-xs-none {
     margin-bottom: 0; }
-  *.margin-xs-bottom-large {
+  *.margin-bottom-xs-large {
     margin-bottom: 40.5px; }
-  *.margin-xs-bottom-larger {
+  *.margin-bottom-xs-larger {
     margin-bottom: 54px; }
-  *.margin-xs-bottom-huge {
+  *.margin-bottom-xs-huge {
     margin-bottom: 81px; } }
 
 @media screen and (min-width: 768px) {
