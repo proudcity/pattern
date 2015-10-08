@@ -1,17 +1,17 @@
-// Variables
-// --------------------------------
+// Bootstrap variables
+// ---------------------------------
+
 @import "variable-loader";
 
 
-// Bootstrap
-// --------------------------------
-@import "bootstrap-loader";
-
-// Bourbon
+// Load Proudcity vendor scss
 // ---------------------------------
 
-@import "bourbon-loader";
+@import "scss/loaders/bootstrap-loader";
+@import "scss/loaders/bourbon-loader";
+@import "scss/loaders/font-awesome-loader";
 
-// Patterns
-// --------------------------------
-@import "pattern-loader";
+
+// Proudcity pattern library
+// ---------------------------------
+@import "scss/proudcity-patterns";

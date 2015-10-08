@@ -16,8 +16,7 @@ elseif ($version) {
           <link rel="stylesheet" href="http://'.$version.'.getproudcity.com/css/proud-toolbar.min.css">'; 
 }
 else {
-  $css = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-          <link rel="stylesheet" href="css/custom.css">
+  $css = '<link rel="stylesheet" href="css/custom.css">
           <link rel="stylesheet" href="css/patternlibrary.css">
           <link rel="stylesheet" href="css/proud-toolbar.css">'; 
 }
