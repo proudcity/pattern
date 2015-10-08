@@ -6313,12 +6313,6 @@ img {
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
-.navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h3 {
-  margin: 12px 0; }
-  .navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h2 a, .navbar-external ~ .navbar-header-region h3, .navbar-external ~ .navbar-header-region h3 a {
-    color: #9d9d9d; }
-  .navbar-external ~ .navbar-header-region h2 i, .navbar-external ~ .navbar-header-region h3 i {
-    margin-right: 0.25em; }
 
 @media screen and (max-width: 767px) {
   .navbar-external {
@@ -6359,14 +6353,10 @@ img {
       min-width: 125px; }
       .navbar-external .menu-box .btn-toolbar.pull-right {
         margin-left: 0; }
-    .navbar-external ~ .navbar-header-region .navbar-header {
-      float: none; }
-    .navbar-external ~ .navbar-header-region h2, .navbar-external ~ .navbar-header-region h3 {
-      margin: 18px 0; }
     .navbar-external .menu-button {
       display: none; } }
 
-@media screen and (max-width: 1279px) {
+@media all {
   .navbar-external .navbar-btn {
     padding-left: 0;
     padding-right: 0;
@@ -6392,9 +6382,26 @@ img {
       .navbar-external .navbar-btn i {
         margin-right: 0.25em; }
       .navbar-external .navbar-btn.search-btn i {
-        margin-right: 0; }
-    .navbar-external ~ .navbar-header-region {
-      display: none; } }
+        margin-right: 0; } }
+
+.navbar-header-region h2, .navbar-header-region h3 {
+  margin: 12px 0; }
+  .navbar-header-region h2, .navbar-header-region h2 a, .navbar-header-region h3, .navbar-header-region h3 a {
+    color: #9d9d9d; }
+  .navbar-header-region h2 i, .navbar-header-region h3 i {
+    margin-right: 0.25em; }
+
+@media screen and (min-width: 768px) {
+  .navbar-header-region .navbar-header {
+    float: none; }
+  .navbar-header-region h2, .navbar-header-region h3 {
+    margin: 18px 0; }
+  .navbar-header-region .menu-button {
+    display: none; } }
+
+@media screen and (min-width: 992px) {
+  .navbar-header-region {
+    display: none; } }
 
 .btn-block {
   display: block; }
