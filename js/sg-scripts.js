@@ -1,5 +1,4 @@
 $(function() {
-
   // Function normalizes height
   // looks for [data-equalizer], and equals 
   // height for all [data-equalize-height] children
@@ -16,7 +15,7 @@ $(function() {
       self.init = function() {
           $children = $(this).find('[data-equalize-height]');
           if($children.length) {
-              self.equalize();
+              self.equalize(true);
               self.setWatch();
           }
       }
@@ -27,20 +26,36 @@ $(function() {
           });
       }
 
-      self.equalize = function() {
-          var largestHeight = 0;
-          self.reset();
-          if(  !mq || window.matchMedia(mq).matches ) {
-              $.each($children, function (index, element) {
-                  var thisHeight = $(element).height();
-                  if (thisHeight > largestHeight) {
-                      largestHeight = thisHeight;
-                  }
+      self.runCalc = function() {
+        var largestHeight = 0;
+        if(  !mq || window.matchMedia(mq).matches ) {
+            $.each($children, function (index, element) {
+                var thisHeight = $(element).height();
+                if (thisHeight > largestHeight) {
+                    largestHeight = thisHeight;
+                }
+            });
+        }
+        $.each($children, function(index, element) {
+            $(element).height(largestHeight + "px");
+        });
+      }
+
+      self.equalize = function(firstCall) {
+          if(firstCall) {
+              $(self).waitForImages({
+                  finished: function() {
+                      self.runCalc();
+                  },
+                  each: $.noop,
+                  waitForAll: true
               });
           }
-          $.each($children, function(index, element) {
-              $(element).height(largestHeight + "px");
-          });
+          else {
+              self.reset();
+              self.runCalc();
+          }
+            
       }
 
       // Description:

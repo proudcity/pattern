@@ -151,6 +151,7 @@ else {
 <!--/.sg-body-->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="js/jquery.waitforimages.min.js"></script>
 <script>
   $(function() {
     $( ".datepicker" ).datepicker();
