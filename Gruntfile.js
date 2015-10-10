@@ -22,7 +22,6 @@ module.exports = function(grunt) {
   var sassFiles = {},
       fileNames = [
         'custom',
-        'proud-toolbar',
         'patternlibrary'
       ];
 

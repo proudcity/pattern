@@ -7862,6 +7862,59 @@ footer.page-footer {
   .page-header, .page-header h1, .page-header h2, .page-header h3 {
     color: #333333; }
 
+.navbar-proud {
+  background-color: #000000;
+  border-color: #000000;
+  border-bottom-color: #222222; }
+  .navbar-proud .proud-menu-tab, .navbar-proud .proud-menu-tab .active, .navbar-proud .proud-menu-tab .active > a {
+    background-color: #222222 !important; }
+  .navbar-proud .navbar-brand {
+    color: #9d9d9d;
+    padding-right: 0; }
+    .navbar-proud .navbar-brand:hover, .navbar-proud .navbar-brand:focus {
+      color: #fff;
+      background-color: transparent; }
+    .navbar-proud .navbar-brand img {
+      border-radius: 2px; }
+  .navbar-proud i.fa {
+    padding-right: 5px; }
+  .navbar-proud .navbar-text {
+    color: #9d9d9d; }
+  .navbar-proud .navbar-nav > li > a {
+    color: #9d9d9d; }
+    .navbar-proud .navbar-nav > li > a:hover, .navbar-proud .navbar-nav > li > a:focus {
+      color: #fff;
+      background-color: transparent; }
+  .navbar-proud .navbar-nav > .active > a, .navbar-proud .navbar-nav > .active > a:hover, .navbar-proud .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: black; }
+  .navbar-proud .navbar-nav > .disabled > a, .navbar-proud .navbar-nav > .disabled > a:hover, .navbar-proud .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent; }
+  .navbar-proud .navbar-toggle {
+    border-color: #333; }
+    .navbar-proud .navbar-toggle:hover, .navbar-proud .navbar-toggle:focus {
+      background-color: #333; }
+    .navbar-proud .navbar-toggle .icon-bar {
+      background-color: #fff; }
+  .navbar-proud .navbar-collapse, .navbar-proud .navbar-form {
+    border-color: #000000; }
+  .navbar-proud .navbar-nav > .open > a, .navbar-proud .navbar-nav > .open > a:hover, .navbar-proud .navbar-nav > .open > a:focus {
+    background-color: black;
+    color: #fff; }
+  @media (max-width: 767px) {
+    .navbar-proud .navbar-nav .open .dropdown-menu > li > a {
+      color: #9d9d9d; }
+      .navbar-proud .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-proud .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent; }
+    .navbar-proud .navbar-nav .open .dropdown-menu > .active > a, .navbar-proud .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-proud .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #fff;
+      background-color: black; }
+    .navbar-proud .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-proud .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-proud .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #444;
+      background-color: transparent; } }
+
 .padding-xs-left {
   padding-left: 40px; }
 

@@ -17,8 +17,7 @@ elseif ($version) {
 }
 else {
   $css = '<link rel="stylesheet" href="css/custom.css">
-          <link rel="stylesheet" href="css/patternlibrary.css">
-          <link rel="stylesheet" href="css/proud-toolbar.css">'; 
+          <link rel="stylesheet" href="css/patternlibrary.css">'; 
 }
 ?>
 <!DOCTYPE html>

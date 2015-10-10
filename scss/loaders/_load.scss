@@ -7,11 +7,11 @@
 // Load Proudcity vendor scss
 // ---------------------------------
 
-@import "scss/loaders/bootstrap-loader";
-@import "scss/loaders/bourbon-loader";
-@import "scss/loaders/font-awesome-loader";
+@import "pattern-scss/loaders/bootstrap-loader";
+@import "pattern-scss/loaders/bourbon-loader";
+@import "pattern-scss/loaders/font-awesome-loader";
 
 
 // Proudcity pattern library
 // ---------------------------------
-@import "scss/proudcity-patterns";
+@import "pattern-scss/proudcity-patterns";
