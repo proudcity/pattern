@@ -19,7 +19,7 @@ body {
   padding-top: 50px; }
 
 .navbar.navbar-patternlibrary {
-  border-bottom-color: #555555;
+  border-bottom-color: #5b616b;
   min-height: 54px; }
 
 .row-offcanvas {
@@ -204,14 +204,14 @@ ul.scroll-menu {
 .sg-anchor {
   display: block;
   padding-top: 1em;
-  color: #000000 !important;
+  color: #000 !important;
   text-decoration: none !important; }
 
 /* Colors
 ---------------------------------------------------------------------------- */
 .sg-color {
   background: #fff;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #e3e4e6;
   display: inline-block;
   height: 80px;
   margin: 0 0.5em 0.5em 0;
@@ -252,22 +252,22 @@ ul.scroll-menu {
  Colors
 ---------------------------------------------------------------------------- */
 .sg-brand-primary .sg-color-swatch {
-  background: #2196F3; }
+  background: #0071bc; }
 
 .sg-gray-lighter .sg-color-swatch {
-  background: #eeeeee; }
+  background: #d6d7d9; }
 
 .sg-gray-light .sg-color-swatch {
-  background: #777777; }
+  background: #aeb0b5; }
 
 .sg-gray .sg-color-swatch {
-  background: #555555; }
+  background: #5b616b; }
 
 .sg-gray-dark .sg-color-swatch {
-  background: #333333; }
+  background: #323a45; }
 
 .sg-gray-darker .sg-color-swatch {
-  background: #222222; }
+  background: #434343; }
 
 .sg-brand-success .sg-color-swatch {
   background: #26BF7D; }
@@ -279,7 +279,7 @@ ul.scroll-menu {
   background: #f0ad4e; }
 
 .sg-brand-danger .sg-color-swatch {
-  background: #d9534f; }
+  background: #e31c3d; }
 
 /* Fonts
 ---------------------------------------------------------------------------- */
@@ -298,8 +298,8 @@ ul.scroll-menu {
 .show-grid {
   padding: 0.5em 0; }
   .show-grid div {
-    background-color: #eeeeee;
-    border: 1px solid #777777;
+    background-color: #d6d7d9;
+    border: 1px solid #aeb0b5;
     padding: 0.5em; }
 
 /* Markup
