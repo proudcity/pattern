@@ -34,7 +34,7 @@ grunt
 
 This is based on [Kemie](https://github.com/kemie)'s [Style-Guide-Boilerplate-Bootstrap-Edition](https://github.com/kemie/Style-Guide-Boilerplate-Bootstrap-Edition), which is in turn based on Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/projects/style-guide-boilerplate/).
 
-See [CREDITS.md]() for a full list of credits.
+See [CREDITS.md](https://github.com/proudcity/pattern/blob/master/CREDITS.md) for a full list of credits.
 
 
 ### @todo
