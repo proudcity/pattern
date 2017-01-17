@@ -24,9 +24,9 @@ body {
 
 .row-offcanvas {
   position: relative;
-  -webkit-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out; }
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out; }
 
 .row-offcanvas-right {
   right: 0; }
@@ -34,11 +34,13 @@ body {
 .row-offcanvas-left {
   left: 0; }
 
-.row-offcanvas-right .sidebar-offcanvas {
+.row-offcanvas-right
+.sidebar-offcanvas {
   right: -240px;
   /* 6 columns */ }
 
-.row-offcanvas-left .sidebar-offcanvas {
+.row-offcanvas-left
+.sidebar-offcanvas {
   left: -250px;
   /* 6 columns */ }
 
@@ -95,7 +97,9 @@ body {
 ---------------------------------------------------------------------------- */
 /* Headings
 ---------------------------------------------------------------------------- */
-.sg-h1, .sg-h2, .sg-h3 {
+.sg-h1,
+.sg-h2,
+.sg-h3 {
   border-bottom: 1px solid #ddd;
   font-weight: normal;
   margin-bottom: 1em;
@@ -103,20 +107,20 @@ body {
 
 .sg-h1 {
   font-weight: bold;
-  padding-bottom: 0.2em;
+  padding-bottom: .2em;
   margin-top: 1em;
   margin-bottom: 1.25em;
   border-bottom-width: 3px; }
 
 .sg-h2 {
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
+  margin-bottom: .5em;
+  padding-bottom: .5em;
   text-transform: capitalize;
   margin-top: 1.5em;
   border-bottom-width: 2px; }
 
 .sg-h3 {
-  padding-bottom: 0.25em;
+  padding-bottom: .25em;
   border-color: #eee; }
 
 .sg-about {
@@ -160,7 +164,7 @@ ul.scroll-menu {
   top: 45px;
   color: #fff;
   content: "Selected code ready to be copied";
-  font-size: 0.8em;
+  font-size: .8em;
   display: block;
   right: 5px;
   padding: 5px 15px;
@@ -183,15 +187,18 @@ ul.scroll-menu {
 .sg-btn--source {
   clear: both; }
 
-.sg-btn--source, .sg-btn--select {
+.sg-btn--source,
+.sg-btn--select {
   display: none; }
 
 /* Show specific buttons if JS enabled */
-.js .sg-btn--source, .js .sg-btn--select {
+.js .sg-btn--source,
+.js .sg-btn--select {
   display: block; }
 
 /* Hide specific buttons conditionally */
-.operamini .sg-btn--source, .legacy .sg-btn--source {
+.operamini .sg-btn--source,
+.legacy .sg-btn--source {
   display: none; }
 
 /* Sections
@@ -214,7 +221,7 @@ ul.scroll-menu {
   border: 1px solid #e3e4e6;
   display: inline-block;
   height: 80px;
-  margin: 0 0.5em 0.5em 0;
+  margin: 0 .5em .5em 0;
   padding: 5px;
   position: relative;
   width: 100px; }
@@ -233,7 +240,7 @@ ul.scroll-menu {
   background: rgba(0, 0, 0, 0.7);
   bottom: 5px;
   color: #fff;
-  font-size: 0.8em;
+  font-size: .8em;
   margin: 0;
   opacity: 0;
   padding: 5px 0;
@@ -285,7 +292,7 @@ ul.scroll-menu {
 ---------------------------------------------------------------------------- */
 .sg-font {
   font-size: 1.8em;
-  padding: 0 0 0.2em 0; }
+  padding: 0 0 .2em 0; }
 
 .sg-font-primary {
   font-family: "Lato", sans-serif; }
@@ -296,11 +303,11 @@ ul.scroll-menu {
 /* Grid
 ---------------------------------------------------------------------------- */
 .show-grid {
-  padding: 0.5em 0; }
+  padding: .5em 0; }
   .show-grid div {
     background-color: #d6d7d9;
     border: 1px solid #aeb0b5;
-    padding: 0.5em; }
+    padding: .5em; }
 
 /* Markup
 ---------------------------------------------------------------------------- */
@@ -314,11 +321,11 @@ ul.scroll-menu {
 
 .sg-source pre {
   background: #333;
-  border-radius: 0.5em;
+  border-radius: .5em;
   border: 1px solid #ddd;
   color: #fff;
   overflow-x: scroll;
-  padding: 0.5em 0.3em; }
+  padding: .5em .3em; }
 
 .sg-source pre code {
   background: transparent; }
@@ -327,7 +334,9 @@ ul.scroll-menu {
   max-height: 0;
   overflow: hidden; }
 
-.js .sg-source.is-active, .operamini .sg-source, .legacy .sg-source {
+.js .sg-source.is-active,
+.operamini .sg-source,
+.legacy .sg-source {
   max-height: 2400px; }
 
 /* -------------------------------------------------------------------------
@@ -338,37 +347,41 @@ ul.scroll-menu {
 
 /* plain text */
 @media screen {
+  .str,
+  .string {
+    color: #E6DB74; }
   /* string content */
+  .kwd,
+  .keyword {
+    color: #66D9EF; }
   /* a keyword */
+  .com,
+  .comment {
+    color: #75715E; }
   /* a comment */
+  .typ {
+    color: #A6E22E; }
   /* a type name */
+  .lit,
+  .number {
+    color: #AE81FF; }
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   /* .pun, .opn, .clo { color: #660 } */
+  .tag {
+    color: #F92672; }
   /* a markup tag name */
+  .atn {
+    color: #A6E22E; }
   /* a markup attribute name */
+  .atv {
+    color: #E6DB74; }
   /* a markup attribute value */
   /*.dec, .var { color: #606 }*/
   /* a declaration; a variable name */
-  /* a function name */
-  .str, .string {
-    color: #E6DB74; }
-  .kwd, .keyword {
-    color: #66D9EF; }
-  .com, .comment {
-    color: #75715E; }
-  .typ {
-    color: #A6E22E; }
-  .lit, .number {
-    color: #AE81FF; }
-  .tag {
-    color: #F92672; }
-  .atn {
-    color: #A6E22E; }
-  .atv {
-    color: #E6DB74; }
   .fun {
-    color: #FF0000; } }
+    color: #FF0000; }
+  /* a function name */ }
 
 /* Use higher contrast and text-weight for printable form. */
 @media print, projection {
@@ -385,7 +398,9 @@ ul.scroll-menu {
     font-weight: bold; }
   .lit {
     color: #044; }
-  .pun, .opn, .clo {
+  .pun,
+  .opn,
+  .clo {
     color: #440; }
   .tag {
     color: #006;
@@ -405,7 +420,7 @@ ol.linenums {
 ol.linenums li {
   color: #bebec5;
   line-height: 1.5;
-  padding-left: 0.8em; }
+  padding-left: .8em; }
 
 /* -------------------------------------------------------------------------
  Legacy IE
